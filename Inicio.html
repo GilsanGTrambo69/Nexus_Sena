@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Previa de Archivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .file-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .file-item {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 0.8em;
+            background-color: #f9f9f9;
+        }
+
+        .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .remove-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .file-name {
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 70px;
+        }
+
+        .file-type {
+            font-size: 0.7em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vista Previa de Archivos</h1>
+    <input type="file" id="fileInput" multiple>
+    <div id="filePreview" class="file-preview"></div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const filePreview = document.getElementById('filePreview');
+        const fileMap = new Map(); // Mapa para almacenar archivos únicos
+
+        fileInput.addEventListener('change', function () {
+            const files = Array.from(fileInput.files);
+
+            files.forEach(file => {
+                if (!fileMap.has(file.name)) {
+                    // Agregar archivo al mapa para evitar duplicados
+                    fileMap.set(file.name, file);
+
+                    // Crear elementos para la vista previa
+                    const fileItem = document.createElement('div');
+                    fileItem.classList.add('file-item');
+
+                    const removeButton = document.createElement('button');
+                    removeButton.classList.add('remove-btn');
+                    removeButton.textContent = '×';
+
+                    // Eliminar archivo de la vista previa y del mapa
+                    removeButton.addEventListener('click', () => {
+                        fileMap.delete(file.name); // Eliminar del mapa
+                        fileItem.remove(); // Eliminar de la vista previa
+                    });
+
+                    const fileName = document.createElement('span');
+                    fileName.classList.add('file-name');
+                    fileName.textContent = file.name;
+
+                    const fileType = document.createElement('span');
+                    fileType.classList.add('file-type');
+                    fileType.textContent = file.type || 'Tipo desconocido';
+
+                    // Añadir elementos al contenedor
+                    fileItem.appendChild(removeButton);
+                    fileItem.appendChild(fileName);
+                    fileItem.appendChild(fileType);
+
+                    filePreview.appendChild(fileItem);
+                }
+            });
+
+            // Resetear el input para permitir volver a seleccionar los mismos archivos
+            fileInput.value = '';
+        });
+    </script>
+</body>
+</html>

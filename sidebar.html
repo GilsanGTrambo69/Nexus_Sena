@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+
+        .page-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 20px;
+        }
+        /* Sidebar Styles */
+        .sidebar {
+            grid-area: sidebar;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 10px;
+        }
+
+        .button-sidebar {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 3px  solid rgb(169, 169, 169);
+            border-radius: 40px;
+            width: 200px;
+            height: 40px;
+            color: rgb(169, 169, 169);
+            text-align: start;
+            font-family: 17px;
+            background-color: white;
+        }
+        .button-sidebar:hover {
+            border-color: #22c55e;
+            color: #22c55e;
+            width: 220px;
+        }
+        .sidebar a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#"><button class="button-sidebar">Inicio</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><button class="button-sidebar">Amigos</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><button class="button-sidebar">Encuestas</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><button class="button-sidebar">Mentorias</button></a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
