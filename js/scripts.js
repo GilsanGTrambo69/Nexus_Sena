@@ -103,21 +103,28 @@ backNone.addEventListener('click',(e) => {
     }
 });
 
-const notiBar = document.getElementById('notificacion-bar');
-const notiButton = document.getElementById('notifications');
+//const notiBar = document.getElementById('notificacion-bar');
+//const notiButton = document.getElementById('notifications');
 
-notiButton.addEventListener('click', () => {
-    notiBar.style.display = 'block';
-    backNone.style.display = 'block';
+const notificationButton = document.getElementById('notifications');
+const notificationModal = document.getElementById('notificacion-bar');
 
-backNone.addEventListener('click', (e) => {
-    if (backNone === e.target) {
-        backNone.style.display = 'none';
-        notiBar.style.display = 'none';
+
+
+// Toggle notification modal
+notificationButton.addEventListener('click', () => {
+    notificationModal.classList.toggle('active');
+    if (notificationModal.classList.contains('active')) {
+        createNotificationItems();
     }
-})
-})
+});
 
+// Close modal when clicking outside
+document.addEventListener('click', (event) => {
+    if (!notificationButton.contains(event.target) && !notificationModal.contains(event.target)) {
+        notificationModal.classList.remove('active');
+    }
+});
 
 
 

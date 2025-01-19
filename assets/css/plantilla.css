@@ -229,7 +229,7 @@ body {
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    height: 500px;
+    height: 100vh;
     overflow-y: auto;
 }
 
@@ -479,19 +479,18 @@ body {
 .escribir-comentario{
     margin-top: 5px;
     width: 100%;
-    height: 50px;
-    display: grid;
-    grid-auto-flow: column; /* Organiza los elementos en columnas (horizontal) */
-    align-items: center; /* Alinea verticalmente */
+    height: 40px;
+    display: inline-block; /*me pone varias cosas en una misma linea*/
     gap: 10px; /* Espaciado entre el contenedor y el input */
     padding: 5px;
     background-color: white;
+    margin: 0 0 10px 0;
 }
 .escribir-comentario input {
     width: 95%;
-    height: 60%;
+    height: 40px;
     border: 2px solid white;
-    border-radius: 25px;
+    border-radius: 20px;
     background: #f5f5f5;
     border-color: white;
     font-size: 16px;
@@ -505,14 +504,19 @@ body {
     border-color: #1daa51;
 }
 .send-coment{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
+    top: 50%;
+    display: inline-block; /*me pone varias cosas en una misma linea*/
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
     background-color: #1daa51;
     cursor: pointer;
-    gap: 10px; /* Espaciado entre el contenedor y el input */
+    gap: 20px; /* Espaciado entre el contenedor y el input */
     padding: 4px 4px;
+}
+.send-coment:hover{
+    background-color: #199245;
 }
 
 /*Modal para crear un post*/
