@@ -92,6 +92,7 @@
 
 
         <!-- Sidebar -->
+        <!--
         <aside class="sidebar" id="sidebar">
             <nav>
                 <ul class="nav-menu">
@@ -109,7 +110,7 @@
                     </li>
                 </ul>
             </nav>
-        </aside>
+        </aside> -->
 
         <!-- Main Content -->
         <main class="main-content">
@@ -145,14 +146,28 @@
                 <button class="create-post-button" id="create-post-button">Crear una Publicacion</button>
             <!--Contenedor de una publicacion-->
             <div class="contenedor-publicacion">
-                <div class="publicacion-header">
+                <div class="publicacion-header2">
                     <div class="profile-picture">
                         <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
                     </div>
                     <div class="user-info">
-                        <div class="Nombre-usuario">Sena oficial</div>
+                        <div class="nombre-usuario">Sena oficial</div>
                         <div class="fecha-publicacion">Fecha de la publicacion</div>
                     </div>
+
+                    <div class="right-icon-post" id="icon-right-post">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="5" r="2" />
+                            <circle cx="12" cy="12" r="2" />
+                            <circle cx="12" cy="19" r="2" />
+                        </svg>
+
+                        <div class="publicacion-opc" id="publicacion-opc">
+                            <button id="eliminar-post-btn">Eliminar Publicacion</button>
+                            <button>Editar Publicacion</button>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="contenedor-publicacion2">
                     <div class="contenedor-publicacion3">
@@ -272,6 +287,26 @@
             </div>
         </div>
     </main>
+    <!--Eliminar post confirmacion-->
+
+    <div class="eliminar-back" id="eliminar-back1">
+        <div class="eliminar-post-container">
+            <center>
+                <img src="assets/img/alert-red.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Desea eliminar esta publicación, una vez eliminada no se podrá recuperar nuevamente.</p>
+                <br>
+                <br>
+                <div>
+                    <button class="cancelar" id="cancelar-eliminacion1">Cancelar</button>
+                    <button class="eliminar-post-button">Eliminar</button>
+                </div>
+            </center>
+        </div>
+    </div>
 
     <div class="back-dark" id="back-dark">
         <!--modal de crear una publicacion-->
@@ -306,6 +341,7 @@
     
     <!--Vista previa-->
     <script src="js/scripts.js"></script>
+    <script src="js/scripts-miMuro.js"></script>
 </body>
 </html>
 

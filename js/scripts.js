@@ -66,7 +66,7 @@ fileInput.addEventListener('change', function () {
 
 
 
-
+//Crear un post
 const backDark = document.getElementById('back-dark');
 const createButton = document.getElementById('create-post-button');
 const createPost = document.getElementById('create-post');
@@ -153,8 +153,7 @@ function closeNotificationWindow() {
 }
 
 
-
-
+//Sidebar
 const sidebar = document.getElementById('sidebar');
 const sidebarToggle = document.getElementById('sidebarToggle');
 
@@ -184,4 +183,3 @@ window.addEventListener('resize', handleResize);
 
 // Llamar a handleResize inicialmente para establecer el estado correcto
 handleResize();
-

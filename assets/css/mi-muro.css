@@ -108,6 +108,124 @@ body {
     "header header"
     "main main";
 }
+.icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.publicacion-header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+}
+.right-icon-post {
+    position: relative;
+    margin-left: auto; /* Empuja el ícono hacia la derecha */
+    width: 24px; /* Ajusta el tamaño del ícono */
+    height: 24px;
+    fill: #333; /* Color del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    display: flex;
+    align-items: center;
+}
+.right-icon-post svg{
+    width: auto;
+    height: auto;
+}
+.publicacion-opc{
+    display: none;
+    position: absolute;
+    justify-content: start;
+    align-items: start;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    border: 3px solid #ddd;
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 20px;
+}
+.publicacion-opc button{
+    display: flex;
+    text-align: start;
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.publicacion-opc button:hover{
+    color: rgb(46, 181, 74);
+}
+.eliminar-back{
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: none;
+}
+.eliminar-post-container{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 2px solid #888;
+    width: 530px;
+    height: 380px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.eliminar-post-container img {
+    top: 20%;
+    width: 120px;
+    height: 120px;
+}
+.eliminar-post-container p {
+    font-family: 30px;
+}
+
+.cancelar{
+    margin-right: 20px;
+    width: 40%;
+    height: 50px;
+    color: gray;
+    font-size: 17px;
+    border: 2px solid gray;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.eliminar-post-button{
+    margin-left: 20px;
+    width: 40%;
+    height: 50px;
+    color: white;
+    font-size: 17px;
+    border: 2px solid #ff3131;
+    background: #ff3131;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.eliminar-post-button:hover{
+    background-color: #f52020;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
