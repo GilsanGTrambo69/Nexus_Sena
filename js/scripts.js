@@ -89,42 +89,69 @@ cerrarModal.addEventListener('click', (e) => {
 
 const userName = document.getElementById('user-name');
 const userOpc = document.getElementById('user-opc');
-const backNone = document.getElementById('back-none');
 
-userName.addEventListener('click', () =>{
-    userOpc.style.display = 'block';
-    backNone.style.display = 'block';
-});
+let isUserOpcOpen = false;
 
-backNone.addEventListener('click',(e) => {
-    if (e.target === backNone) {
-        userOpc.style.display = 'none';
-        backNone.style.display = 'none';
+userName.addEventListener('click', toggleUserOpc);
+
+document.addEventListener('click', (e) => {
+    if (!userName.contains(e.target) && !userOpc.contains(e.target)) {
+        closeUserOpc();
     }
-});
+})
+
+function toggleUserOpc() {
+    if (isUserOpcOpen) {
+        closeUserOpc();
+    } else {
+        openUserOpc();
+    }
+}
+
+function openUserOpc() {
+    userOpc.style.display ='block';
+    isUserOpcOpen = true;
+}
+
+function closeUserOpc() {
+    userOpc.style.display = 'none';
+    isUserOpcOpen = false;
+}
 
 //const notiBar = document.getElementById('notificacion-bar');
 //const notiButton = document.getElementById('notifications');
 
-const notificationButton = document.getElementById('notifications');
+const notificationBtn = document.getElementById('notifications');
 const notificationModal = document.getElementById('notificacion-bar');
 
+let IsNotificationWindowOpen = false;
 
+notificationBtn.addEventListener('click', toggleNotificationWindow);
 
-// Toggle notification modal
-notificationButton.addEventListener('click', () => {
-    notificationModal.classList.toggle('active');
-    if (notificationModal.classList.contains('active')) {
-        createNotificationItems();
+document.addEventListener('click', (e) => {
+    if (!notificationBtn.contains(e.target) && !notificationModal.contains(e.target)) {
+        closeNotificationWindow();
     }
 });
 
-// Close modal when clicking outside
-document.addEventListener('click', (event) => {
-    if (!notificationButton.contains(event.target) && !notificationModal.contains(event.target)) {
-        notificationModal.classList.remove('active');
+function toggleNotificationWindow() {
+    if (IsNotificationWindowOpen) {
+        closeNotificationWindow();
+    } else {
+        openNotificationWindow();
     }
-});
+}
+
+function openNotificationWindow() {
+    notificationModal.style.display = 'block';
+    IsNotificationWindowOpen = true;
+}
+
+function closeNotificationWindow() {
+    notificationModal.style.display = 'none';
+    IsNotificationWindowOpen = false;
+}
+
 
 
 
