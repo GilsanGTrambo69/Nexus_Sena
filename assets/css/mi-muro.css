@@ -53,6 +53,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
+
 }
 
 .name-section-m {
@@ -72,6 +73,7 @@ body {
 }
 
 .edit-button-m {
+    margin-left: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -226,6 +228,135 @@ body {
 .eliminar-post-button:hover{
     background-color: #f52020;
 }
+.informacion-usuario {
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 13px;
+}
+.titulo{
+    color: #22c55e;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px;
+}
+.informacion-detalle{
+    width: 100%;
+    padding: 20px;
+}
+.titulo-informacion {
+    color: #888; /* Gris claro */
+    font-size: 20px; /* Tamaño pequeño */
+    font-weight: normal; /* Texto normal */
+}
+.informacion {
+    display: block; /* Asegura que el nombre esté debajo de la etiqueta */
+    font-size: 30px; /* Tamaño más grande */
+    color: #000; /* Negro para el nombre */
+    margin-top: 2px; /* Espacio entre el título y el nombre */
+}
+
+.fila {
+    display: flex; /* Aplica flexbox */
+    justify-content: space-between; /* Espacia los elementos entre sí */
+    align-items: center; /* Alinea verticalmente al centro */
+    margin-bottom: 10px; /* Espacio entre filas */
+}
+.green-link {
+    color: #22c55e;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: #22c55e;
+    cursor: pointer;
+}
+
+/**/
+.cambiar-foto-back{
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: none;
+}
+.cambiar-foto{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 2px solid #888;
+    width: 530px;
+    height: 400px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.input-file1{
+    display: none;
+}
+.file-label1{
+    padding: 10px 22px;
+    background-color: white;
+    border: 3px solid gray;
+    color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+.file-label1:hover{
+    border-color: #22c55e;
+    color: #22c55e;
+}
+.file-preview2{
+    left: 50%;
+    width: 90%;
+    height: 200px;
+    border: 3px solid rgb(165, 162, 162);
+    border-radius: 5px;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.button-guardar {
+    width: 40%;
+    height: 50px;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 22px;
+    background: rgb(46, 181, 74);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.button-guardar:hover{
+    background-color: rgb(38, 153, 61);
+}
+.menu-desplegable{
+    border-radius: 50px;
+}
+select{
+    width: 100px; /* Ancho del menú */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde */
+    background-color: none; /* Fondo */
+    color: black; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

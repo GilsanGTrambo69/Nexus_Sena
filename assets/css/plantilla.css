@@ -363,7 +363,7 @@ body {
     z-index: 1000;
 }
 .all-post {
-    border: 2px solid gray;
+    border: 3px solid gray;
     border-radius: 7px;
     padding: 15px;
 }
