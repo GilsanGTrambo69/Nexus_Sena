@@ -262,6 +262,21 @@ body {
     align-items: center; /* Alinea verticalmente al centro */
     margin-bottom: 10px; /* Espacio entre filas */
 }
+.fila input{
+    width: 60%;
+    border: none;
+    outline: none;
+    border-color: white;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+}
+.fila input:hover{
+    outline: none;
+}
+.fila input:focus {
+    outline: none;
+}
 .green-link {
     color: #22c55e;
     font-size: 30px;
@@ -356,7 +371,43 @@ select{
     color: black; /* Color del texto */
     cursor: pointer; /* Cambia el cursor */
 }
+select option {
+    width: 30px;
+}
 
+.contenedor-fijo {
+    position: fixed;
+    top: 85%;         /* Posiciona el centro verticalmente */
+    left: 50%;        /* Posiciona el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrarlo */
+    background-color: white;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 400px;
+}
+.text{
+    color: black;
+    font-size: 20px;
+}
+.button-cancelar {
+    width: 40%;
+    height: 50px;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 22px;
+    background: #ff3131;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.button-cancelar:hover{
+    background-color: #f52020;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

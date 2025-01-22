@@ -79,7 +79,7 @@
                         <img class="foto-perfil" src="./assets/img/foto-perfil.png" alt="">
                         <div class="user-opc" id="user-opc">
                             <a href="Mi-muro.html"><button class="user-opc-b">Mi muro</button></a>
-                            <a href="#"><button class="user-opc-b">Configuracion</button></a>
+                            <a href="Configuracion.html"><button class="user-opc-b">Configuracion</button></a>
                             <a href="#"><button class="user-opc-sesion">Cerrar cesion</button></a>
                         </div>
                     </div>
@@ -115,156 +115,168 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="all-post">
-            <div class="informacion-usuario">
-                <div class="titulo">Informacion Publica</div>
-                <div class="informacion-detalle">
-                    <divc class="fila">
-                        <div class="informacion">Foto de Perfil</div>
-                        <p class="green-link" id="cambiar-foto">Cambiar Foto</p>
-                    </divc>
-
-                    <div class="fila">
-                        <div class="titulo-informacion">nombre del archivo</div>
+                <form action="#">
+                    <div class="informacion-usuario">
+                        <div class="titulo">Informacion Publica</div>
+                        <div class="informacion-detalle">
+                            <divc class="fila">
+                                <div class="informacion">Foto de Perfil</div>
+                                <p class="green-link" id="cambiar-foto">Cambiar Foto</p>
+                            </divc>
+        
+                            <div class="fila">
+                                <div class="titulo-informacion">nombre del archivo</div>
+                            </div>
+                        </div>
+                        <div class="informacion-detalle">
+                            <divc class="fila">
+                                <div class="informacion">Foto de Portada</div>
+                                <p class="green-link" id="cambiar-portada">Cambiar Foto</p>
+                            </divc>
+        
+                            <div class="fila">
+                                <div class="titulo-informacion">nombre del archivo</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="informacion-detalle">
-                    <divc class="fila">
-                        <div class="informacion">Foto de Portada</div>
-                        <p class="green-link" id="cambiar-portada">Cambiar Foto</p>
-                    </divc>
-
-                    <div class="fila">
-                        <div class="titulo-informacion">nombre del archivo</div>
+        
+                    <div class="informacion-usuario">
+                        <div class="fila">
+                            <div class="titulo">Informacion Personal</div>
+                            <div class="titulo-informacion">Quien puede verlo?</div>
+                        </div>
+                        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Domicilio:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-1">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="Domicilio-input" placeholder="-" value="">
+                            </div>
+                        </div>
+        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Fecha de nacimiento:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-2">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="fecha-nacimiento-input" placeholder="-" value="">
+                            </div>
+                        </div>
+                        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Empelo:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-3">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="empleo-input" placeholder="-" value="">
+                            </div>
+                        </div>
+        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Gustos:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-4">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="gustos-input" placeholder="-" value="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="informacion-usuario">
-                <div class="fila">
-                    <div class="titulo">Informacion Personal</div>
-                    <div class="titulo-informacion">Quien puede verlo?</div>
-                </div>
-                
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Domicilio:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-1">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
+        
+                    <div class="informacion-usuario">
+                        <div class="fila">
+                            <div class="titulo">Otra informacion</div>
+                            <div class="titulo-informacion">Quien puede verlo?</div>
+                        </div>
+                        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Amigos:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-5">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <div class="informacion">-</div>
+                            </div>
+                        </div>
+        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Genero:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-6">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="genero-input" placeholder="-" value="">
+                            </div>
+                        </div>
+                        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Orientacion sexual:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-7">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="orientacion-input" placeholder="-" value="">
+                            </div>
+                        </div>
+        
+                        <div class="informacion-detalle">
+                            <div class="fila">
+                                <div class="titulo-informacion">Discapacidad:</div>
+                                <select class="menu-desplegable" name="" id="opc-informacion-8">
+                                    <option class="option" value="todos">Todos</option>
+                                    <option value="nadie">Nadie</option>
+                                    <option value="solo-yo">Solo Yo</option>
+                                </select>
+                            </div>
+                            <div class="fila">
+                                <input type="text" name="" id="discapacidad-input" placeholder="-" value="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
+                    <div class="contenedor-fijo">
+                        <center>
+                            <div class="text">Guardar cambios realizados</div>
+                            <br>
+                            <div>
+                                <button class="button-cancelar">Cancelar</button>
+                                <button class="button-guardar">Guardar</button>
+                            </div>
+                        </center>
+                        
                     </div>
-                </div>
-
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Fecha de nacimiento:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-2">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-                
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Empelo:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-3">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Gustos:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-4">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="informacion-usuario">
-                <div class="fila">
-                    <div class="titulo">Otra informacion</div>
-                    <div class="titulo-informacion">Quien puede verlo?</div>
-                </div>
-                
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Amigos:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-5">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Genero:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-6">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-                
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Orientacion sexual:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-7">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-
-                <div class="informacion-detalle">
-                    <div class="fila">
-                        <div class="titulo-informacion">Discapacidad:</div>
-                        <select class="menu-desplegable" name="" id="opc-informacion-8">
-                            <option class="option" value="todos">Todos</option>
-                            <option value="nadie">Nadie</option>
-                            <option value="solo-yo">Solo Yo</option>
-                        </select>
-                    </div>
-                    <div class="fila">
-                        <div class="informacion">-</div>
-                    </div>
-                </div>
-            </div>
-            
+                </form>
         </div>
     </main>
     <!--Eliminar post confirmacion-->
@@ -305,6 +317,7 @@
     <!--Vista previa-->
     <script src="js/scripts-editar-perfil.js?v=1.0"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/scripts-ver-perfil.js"></script>
 </body>
 </html>
 
