@@ -36,5 +36,6 @@
             </form>
         </div>
     </div>
+    <script src="js/crear-publicacion.js"></script>
 </body>
 </html>

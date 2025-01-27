@@ -59,5 +59,8 @@
             </div>
         </div>
     </header>
+    <!--Script para abrir barra de perfil y de notificaciones:-->
+    <script src="js/scripts-ver-perfil.js"></script>
+    
 </body>
 </html>

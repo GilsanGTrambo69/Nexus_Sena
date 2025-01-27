@@ -179,9 +179,8 @@
         <button class="sidebar-toggle" id="sidebarToggle">☰</button>
     </div>
     <?php 
-    include './assets/php/crear-publicacion.php';
+    include 'crear-publicacion.php';
     ?>
-    <script src="js/scripts-ver-perfil.js"></script>
     <script src="js/scripts.js" ></script>
 
 </body>

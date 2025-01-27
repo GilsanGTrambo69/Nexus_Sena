@@ -10,13 +10,13 @@
             <nav>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="/Inicio.php"><button class="button-sidebar"><img src="./assets/img/home.png" alt="">Inicio</button></a>
+                        <a href="Inicio.php"><button class="button-sidebar"><img src="./assets/img/home.png" alt="">Inicio</button></a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Amigos.php"><button class="button-sidebar"><img src="./assets/img/Amigos.png" alt="">Amigos</button></a>
+                        <a href="Amigos.php"><button class="button-sidebar"><img src="./assets/img/Amigos.png" alt="">Amigos</button></a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Encuestas.php"><button class="button-sidebar"><img src="./assets/img/encuestas.png" alt="">Encuestas</button></a>
+                        <a href="Encuestas.php"><button class="button-sidebar"><img src="./assets/img/encuestas.png" alt="">Encuestas</button></a>
                     </li>
                     <li class="nav-item">
                         <a href=""><button class="button-sidebar"><img src="./assets/img/mensajes.png" alt="">Mensajes</button></a>

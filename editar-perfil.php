@@ -255,7 +255,6 @@
     <!--Vista previa-->
     <script src="js/scripts-editar-perfil.js?v=1.0"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/scripts-ver-perfil.js"></script>
 </body>
 </html>
 

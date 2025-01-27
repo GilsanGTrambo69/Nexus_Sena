@@ -142,7 +142,6 @@
     
     
     <!--Vista previa-->
-    <script src="js/scripts-ver-perfil.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/scripts-miMuro.js"></script>
 </body>
