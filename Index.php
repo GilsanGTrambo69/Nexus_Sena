@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/plantilla.css">
-    <link rel="stylesheet" href="./assets/css/page-container.css">
-
     <title>Plantilla pagina de inicio</title>
     <style>
         * {
@@ -181,8 +179,8 @@
     <?php 
     include './assets/php/crear-publicacion.php';
     ?>
-    <script src="js/scripts-ver-perfil.js"></script>
     <script src="js/scripts.js" ></script>
+    <script src="js/scripts-ver-perfil.js"></script>
 
 </body>
 </html>

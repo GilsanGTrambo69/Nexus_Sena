@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/plantilla.css">
     <link rel="stylesheet" href="./assets/css/mi-muro.css">
+    <link rel="stylesheet" href="./assets/css/page-container2.css">
     <title>Perfil de Usuario</title>
     <style>
         * {
@@ -24,11 +25,6 @@
         .sidebar-toggle{
             display: none;
         }
-        .page-container {
-            grid-template-areas:
-            "header header"
-            "main main";
-        }
 
         .profile-picture-m{
             text-align: center;
@@ -38,83 +34,14 @@
 <body>
     <div class="page-container">
         <!-- Header -->
-        <header class="header">
-            <div class="header-front">
-                <div class="logo-sena">
-                    <a href="Inicio.html"><img src="./assets/img/logo-sena.png" alt="Logo-sena"></a>
-                </div>
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Buscar">
-                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                    </svg>
-                </div>
-                
-                <div class="notifications" id="notifications">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
-                    </svg>
-                    <div class="notification-dot"></div>
-                </div>
-                <div class="notificacion-bar" id="notificacion-bar">
-                    <div class="marcar-notificacion">Marcar todo como leido</div>
-                    <br>
-                    <div class="notificacion-container">
-                        <div class="notificacion-user">
-                            <div class="user-info-notificacion">
-                                <!--Informacion del usuario en el comentario-->
-                                <div class="profile-picture-notificacion">
-                                    <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
-                                </div>
-                                <div class="user-info-noti">
-                                    <div class="nombre-usurio-notificacion">Sena oficial</div>
-                                    
-                                    <div class="tipo-notificacion">Tipo de notificacion</div>
-                                </div>
-                                <div class="right-text">Hora</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="user-profile" id="user-name">
-                    <span class="user-name" >Alejandro</span>
-                    <div class="profile-picture">
-                        <img class="foto-perfil" src="./assets/img/foto-perfil.png" alt="">
-                        <div class="user-opc" id="user-opc">
-                            <a href="Mi-muro.html"><button class="user-opc-b">Mi muro</button></a>
-                            <a href="Configuracion.html"><button class="user-opc-b">Configuracion</button></a>
-                            <a href="#"><button class="user-opc-sesion">Cerrar cesion</button></a>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </header>
+        <?php require 'cabecera.php'; ?>
 
 
         <!-- Sidebar -->
-        <!--
-        <aside class="sidebar" id="sidebar">
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#"><button class="button-sidebar">Inicio</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"><button class="button-sidebar">Amigos</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"><button class="button-sidebar">Encuestas</button></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"><button class="button-sidebar">Mentorias</button></a>
-                    </li>
-                </ul>
-            </nav>
-        </aside> -->
+        
+        <?php
+            require 'sidebar.php';
+        ?>
 
         <!-- Main Content -->
         <main class="main-content">
@@ -131,7 +58,7 @@
                                 <h1 class="name-m">Omar Alejandro Galvis Espitia</h1>
                                 <p class="role-m">Aprendiz - Etapa Electiva</p>
                             </div>
-                            <a href="editar-perfil.html" class="edit-button-m">
+                            <a href="editar-perfil.php" class="edit-button-m">
                                 Editar mi información
                                 <svg class="edit-icon-m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
@@ -144,7 +71,7 @@
                             <p>Quebrajacho - Fusagasugá</p>
                             <p>Edad 21 años</p>
                         </div>
-                        <a href="ver-perfil-completo.html" class="view-profile-m">Ver perfil completo</a>
+                        <a href="ver-perfil-completo.php" class="view-profile-m">Ver perfil completo</a>
                     </div>
                 </div>
                 <button class="create-post-button" id="create-post-button">Crear una Publicacion</button>
@@ -312,40 +239,12 @@
         </div>
     </div>
 
-    <div class="back-dark" id="back-dark">
-        <!--modal de crear una publicacion-->
-        <div class="create-post" id="create-post">
-            <h2>Nueva publicacion</h2>
-            <br>
-            <form action="#">
-                <div>
-                    <input type="file" name="fileInput" id="fileInput" class="input-file" multiple>
-                    <label for="fileInput" class="file-label">Adjuntar archivo</label>
-                    <button class="button-modal-create">Ubicacion</button>
-                    <button class="button-modal-create">Mencionar amigo</button>
-                </div>
-                <br>
-                <div class="ubicacion-container">
-                    <img src="./assets/img/Ubicacion.png" alt="">
-                    <input class="input-ubicacion" type="text" name="" id="input-ubicacion" placeholder="...">
-                </div>
-                <div class="create-container">
-                    <textarea class="text-post" name="" id="text-post" placeholder="Escribe aqui..." maxlength="1000"></textarea>
-                    <!--Contenedor de la vista previa de imagenes-->
-                    <div class="file-preview" id="filePreview"></div>
-                </div>
-                <br>
-                <div class="button-left">
-                    <button class="cancelar-button" id="cancelar-button">Cancelar</button>
-                    <button class="publicar-button">Publicar</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    <?php include 'crear-publicacion.php';?>
     
     <!--Vista previa-->
-    <script src="js/scripts.js"></script>
     <script src="js/scripts-miMuro.js"></script>
+    <script src="js/scripts-ver-perfil.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
 
