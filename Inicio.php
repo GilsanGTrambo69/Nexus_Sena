@@ -47,14 +47,14 @@
                             <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
                         </div>
                         <div class="user-info">
-                            <div class="Nombre-usuario">Sena oficial</div>
+                            <div class="Nombre-usuario">Alejandro</div>
                             <div class="fecha-publicacion">Fecha de la publicacion</div>
                         </div>
                     </div>
                     <div class="contenedor-publicacion2">
                         <div class="contenedor-publicacion3">
                             <p> Expo Empleo SENA Joven’: 20 mil oportunidades laborales para la juventud del país</p>
-                            <img src="./assets/img/publicacion2.png" alt="publicacion img" class="publicacion-img">
+                            <img src="./assets/img/meme.jpg" alt="publicacion img" class="publicacion-img">
                         </div>
                     </div>
                     <div class="publicacion-buttons">

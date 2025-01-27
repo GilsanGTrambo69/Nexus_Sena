@@ -21,6 +21,9 @@
                     <li class="nav-item">
                         <a href=""><button class="button-sidebar"><img src="./assets/img/mensajes.png" alt="">Mensajes</button></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="Noticias.php"><button class="button-sidebar"><img src="./assets/img/mensajes.png" alt="">Noticias</button></a>
+                    </li>
                 </ul>
             </nav>
         </aside>
