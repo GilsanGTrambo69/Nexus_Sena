@@ -38,6 +38,7 @@
 }
 .eliminar-solicitud:hover{
     border-color: red;
+    color: red;
 }
 
 .container {
@@ -48,9 +49,9 @@
     padding: 10px;
     gap: 10px; /* Espacio entre los elementos */
     overflow: hidden; /* Evita el desbordamiento */
-    }
+}
 
-    .image {
+.image {
     flex-shrink: 0; /* Evita que la imagen se reduzca */
     width: 100px; /* Tamaño fijo de la imagen */
     height: auto;
@@ -60,84 +61,149 @@
     height: 50px;
     padding: 3px;
     background-color: gray;
-    }
+    cursor: pointer;
+}
 
-    .image2{
-        left: 50%;
-        top: 50%;
-        width: 45px;
-        height: 45px;
-        border-radius: 50px;
-    }
+.image2{
+    left: 50%;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
 
-    .text-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Espacio entre los textos */
-    flex-grow: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
-    margin-right: 10px; /* Espacio entre los textos y los botones */
-    min-width: 0; /* Necesario para que `flex-grow` funcione correctamente con `text-overflow` */
-    }
+.text-container {
+display: flex;
+flex-direction: column;
+gap: 5px; /* Espacio entre los textos */
+flex-grow: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+margin-right: 10px; /* Espacio entre los textos y los botones */
+min-width: 0; /* Necesario para que `flex-grow` funcione correctamente con `text-overflow` */
+cursor: pointer;
+}
 
-    .text {
-    margin: 0;
-    white-space: nowrap; /* Impide que el texto salte de línea */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
-    }
-    .text-roll{
-    margin: 0;
-    white-space: nowrap; /* Impide que el texto salte de línea */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
-    color: #22c55e;
-    }
+.text {
+margin: 0;
+white-space: nowrap; /* Impide que el texto salte de línea */
+overflow: hidden; /* Oculta el texto que se desborda */
+text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+}
+.text-roll{
+margin: 0;
+white-space: nowrap; /* Impide que el texto salte de línea */
+overflow: hidden; /* Oculta el texto que se desborda */
+text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+color: #22c55e;
+}
 
-    .buttons-container {
-    display: flex;
-    background-color: red;
-    }
+.buttons-container {
+display: flex;
+}
 
-    .button {
-        background-color: #22c55e;
-        border-radius: 50px;
-        border: 3.5px solid #22c55e;
-        min-width: 100px;
-        height: 45px;
-        color: white;
-        margin-top: 20px;
-        margin-left: 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+.button {
+    background-color: #22c55e;
+    border-radius: 50px;
+    border: 3.5px solid #22c55e;
+    min-width: 100px;
+    height: 45px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #1daa51;
+    border: #1daa51;
+}
 
-    .button:hover {
-    background-color: #0056b3;
-    }
 
-    /* Reglas responsivas */
-    @media (max-width: 768px) {
-    /*.image {
-        width: 80px; /* Imagen más pequeña *
-    }*/
+.eliminar-back{
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: none;
+}
+.eliminar-post-container{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 2px solid #888;
+    width: 530px;
+    height: 380px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.eliminar-post-container img {
+    top: 20%;
+    width: 120px;
+    height: 120px;
+}
+.eliminar-post-container p {
+    font-family: 30px;
+}
 
-    .button {
-        padding: 5px 8px; /* Botones más compactos */
-        font-size: 14px; /* Texto más pequeño en botones */
-    }
-    }
+.cancelar{
+    margin-right: 20px;
+    width: 40%;
+    height: 50px;
+    color: gray;
+    font-size: 17px;
+    border: 2px solid gray;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.cancelar:hover{
+    border-color: #22c55e;
+}
+.eliminar-amigo-button{
+    margin-left: 20px;
+    width: 40%;
+    height: 50px;
+    color: white;
+    font-size: 17px;
+    border: 2px solid #ff3131;
+    background: #ff3131;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.eliminar-amigo-button:hover{
+    background-color: #f52020;
+}
 
-    @media (max-width: 480px) {
-    .text-container {
-        gap: 2px; /* Reduce el espacio entre textos */
-    }
+/* Reglas responsivas */
+@media (max-width: 768px) {
+/*.image {
+    width: 80px; /* Imagen más pequeña *
+}*/
 
-    .text {
-        font-size: 14px; /* Texto más pequeño */
-    }
+.button {
+    padding: 5px 8px; /* Botones más compactos */
+    font-size: 14px; /* Texto más pequeño en botones */
+}
+}
 
-    .button {
-        font-size: 12px;
-        padding: 4px 6px; /* Botones más pequeños */
-    }
-    }
+@media (max-width: 480px) {
+.text-container {
+    gap: 2px; /* Reduce el espacio entre textos */
+}
+
+.text {
+    font-size: 14px; /* Texto más pequeño */
+}
+
+.button {
+    font-size: 12px;
+    padding: 4px 6px; /* Botones más pequeños */
+}
+}

@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./assets/css/plantilla.css">
     <link rel="stylesheet" href="./assets/css/page-container.css">
     <link rel="stylesheet" href="./assets/css/amigos.css">
-
-    <title>Plantilla pagina de inicio</title>
+    <title>Amigos</title>
     <style>
         * {
             margin: 0;
@@ -54,7 +53,7 @@
                                 <p class="text-roll">Aprendiz</p>
                             </div>
                             <div class="buttons-container">
-                                <button class="button">Amigos</button>
+                                <button class="button" id="eliminar1">Amigos</button>
                             </div>
                         </div>
                         <div class="container">
@@ -120,8 +119,8 @@
                                 <p class="text-roll">Aprendiz</p>
                             </div>
                             <div class="buttons-container">
-                            <button class="button">Eliminar</button>
-                                <button class="button">Amigos</button>
+                            <button class="eliminar-solicitud" >Eliminar</button>
+                                <button class="button">Aceptar</button>
                             </div>
                         </div>
                     </div>
@@ -139,7 +138,7 @@
                                 <p class="text-roll">Aprendiz</p>
                             </div>
                             <div class="buttons-container">
-                                <button class="button">Amigos</button>
+                                <button class="button">Agregar</button>
                             </div>
                         </div>
                     </div>
@@ -150,6 +149,26 @@
         <!-- Toggle Button -->
         <button class="sidebar-toggle" id="sidebarToggle">☰</button>
     </div>
+    <!--Modal para eliminar a alguien de la lista de amigos-->
+    <div class="eliminar-back" id="eliminar-back2">
+        <div class="eliminar-post-container">
+            <center>
+                <img src="assets/img/alert-red.png" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Desea eliminar de la lista de amigos</p>
+                <br>
+                <br>
+                <div>
+                    <button class="cancelar" id="cancelar-eliminacion2">Cancelar</button>
+                    <button class="eliminar-amigo-button">Eliminar</button>
+                </div>
+            </center>
+        </div>
+    </div>
+    <script src="js/scripts-amigos.js"></script>
     <script src="js/scripts.js" ></script>
 
 </body>
