@@ -45,18 +45,64 @@
                 <div class="friends-container">
                     <span class="titulo-amigos">Mis Amigos</span>
                     <div class="my-friends">
-                        <div class="user-info-amigo">
-                            <!--Informacion del usuario en el comentario-->
-                            <div class="profile-picture-amigo">
-                                <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
                             </div>
-                            <div class="user-info-amigo">
-                                <div class="nombre-usurio-amigo">Sena oficial</div>
-                                
-                                <div class="user-roll-coment">Aprediz</div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
                             </div>
-                            <div class="right-button">
-                                <button class="friend-button">Amigos</button>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
+                            </div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
+                            </div>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
+                            </div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
+                            </div>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
+                            </div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
+                            </div>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
+                            </div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
+                            </div>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
                             </div>
                         </div>
                     </div>
@@ -65,21 +111,17 @@
                 <div class="friends-container">
                     <span class="titulo-amigos">Solicitudes</span>
                     <div class="my-friends">
-                        <div class="user-info-amigo">
-                            <!--Informacion del usuario en el comentario-->
-                            <div class="profile-picture-amigo">
-                                <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
                             </div>
-                            <div class="user-info-amigo">
-                                <div class="nombre-usurio-amigo">Sena oficial</div>
-                                
-                                <div class="user-roll-coment">Aprediz</div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
                             </div>
-                            <div class="right-button">
-                            <button class="eliminar-solicitud">Eliminar</button>
-                            </div>
-                            <div class="right-button">
-                                <button class="friend-button">Amigos</button>
+                            <div class="buttons-container">
+                            <button class="button">Eliminar</button>
+                                <button class="button">Amigos</button>
                             </div>
                         </div>
                     </div>
@@ -88,18 +130,16 @@
                 <div class="friends-container">
                     <span class="titulo-amigos">Personas que quizas conozcas</span>
                     <div class="my-friends">
-                        <div class="user-info-amigo">
-                            <!--Informacion del usuario en el comentario-->
-                            <div class="profile-picture-amigo">
-                                <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
+                        <div class="container">
+                            <div class="image">
+                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
                             </div>
-                            <div class="user-info-amigo">
-                                <div class="nombre-usurio-amigo">Sena oficial</div>
-                                
-                                <div class="user-roll-coment">Aprediz</div>
+                            <div class="text-container">
+                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
+                                <p class="text-roll">Aprendiz</p>
                             </div>
-                            <div class="right-text">
-                                <button class="friend-button">Amigos</button>
+                            <div class="buttons-container">
+                                <button class="button">Amigos</button>
                             </div>
                         </div>
                     </div>

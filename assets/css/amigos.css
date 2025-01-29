@@ -1,8 +1,5 @@
-.friends-container{
-    margin-top: 20px;
-}
-
 .my-friends {
+    border-radius: 3px;
     border: 2px solid gray;
     padding: 10px;
 }
@@ -11,7 +8,7 @@
     background-color: #22c55e;
     border-radius: 50px;
     border: 3.5px solid #22c55e;
-    width: 200px;
+    min-width: 100px;
     height: 45px;
     color: white;
     margin-top: 20px;
@@ -31,7 +28,7 @@
     background-color: white;
     border-radius: 50px;
     border: 3.5px solid gray;
-    width: 200px;
+    min-width: 100px;
     height: 45px;
     color: gray;
     margin-top: 20px;
@@ -43,36 +40,104 @@
     border-color: red;
 }
 
-.user-info-amigo{
+.container {
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-.profile-picture-amigo {
-    cursor: pointer;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Mantener los elementos en una sola línea */
+    padding: 10px;
+    gap: 10px; /* Espacio entre los elementos */
+    overflow: hidden; /* Evita el desbordamiento */
+    }
+
+    .image {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    width: 100px; /* Tamaño fijo de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y los textos */
+    border-radius: 50px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background: #ddd;
-    padding: 3px 3px;
-    position: relative;
-}
-.profile-picture-amigo img{
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.nombre-usuario-amigo{
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.tipo-amigo{
-    color: gray;
-}
-.righ-button {
-    text-align: right;
-    right: 100%;
-}
+    padding: 3px;
+    background-color: gray;
+    }
+
+    .image2{
+        left: 50%;
+        top: 50%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+    }
+
+    .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio entre los textos */
+    flex-grow: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+    margin-right: 10px; /* Espacio entre los textos y los botones */
+    min-width: 0; /* Necesario para que `flex-grow` funcione correctamente con `text-overflow` */
+    }
+
+    .text {
+    margin: 0;
+    white-space: nowrap; /* Impide que el texto salte de línea */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+    }
+    .text-roll{
+    margin: 0;
+    white-space: nowrap; /* Impide que el texto salte de línea */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+    color: #22c55e;
+    }
+
+    .buttons-container {
+    display: flex;
+    background-color: red;
+    }
+
+    .button {
+        background-color: #22c55e;
+        border-radius: 50px;
+        border: 3.5px solid #22c55e;
+        min-width: 100px;
+        height: 45px;
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+    background-color: #0056b3;
+    }
+
+    /* Reglas responsivas */
+    @media (max-width: 768px) {
+    /*.image {
+        width: 80px; /* Imagen más pequeña *
+    }*/
+
+    .button {
+        padding: 5px 8px; /* Botones más compactos */
+        font-size: 14px; /* Texto más pequeño en botones */
+    }
+    }
+
+    @media (max-width: 480px) {
+    .text-container {
+        gap: 2px; /* Reduce el espacio entre textos */
+    }
+
+    .text {
+        font-size: 14px; /* Texto más pequeño */
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 4px 6px; /* Botones más pequeños */
+    }
+    }

@@ -293,7 +293,7 @@ body {
     border: 3px  solid rgb(169, 169, 169);
     border-radius: 40px;
     width: 200px;
-    height: 40px;
+    height: 45px;
     color: rgb(169, 169, 169);
     text-align: start;
     font-family: 17px;
@@ -318,7 +318,7 @@ body {
 /* Main Content Styles */
 .main-content {
     grid-area: main;
-    background: white;
+    background: whites;
     border-radius: 20px;
     padding: 10px;
     overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
@@ -389,6 +389,7 @@ body {
     justify-content: center;
     gap: 5px;
 }
+.page-container
 .nombre-usurio{
     font-weight: bold;
     font-size: 1.2em;
@@ -515,7 +516,6 @@ body {
     font-size: 1.2em;
 }
 .user-roll-coment{
-    font-weight: bold;
     color: #1daa51;
 }
 .comentario-user{
