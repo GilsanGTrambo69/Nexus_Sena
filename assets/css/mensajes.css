@@ -1,0 +1,144 @@
+.main-content2{
+    grid-area: main;
+    background: whites;
+    border-radius: 20px;
+    padding: 10px;
+    overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
+    max-height: 89vh;
+    height: auto;
+    background-color: red;
+}
+
+.main-content::-webkit-scrollbar{
+    display: none;
+}
+
+.all-chats{
+    border: 3px solid gray;
+    border-radius: 7px;
+    padding: 15px;
+    display: flex; /* Alinea los elementos en fila */
+    gap: 20px; /* Espaciado entre secciones */
+    justify-content: space-between; /* Distribuye el espacio entre secciones */
+}
+/*Diseño de la lista de chats */
+.chats{
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    width: 50px;
+    height: 80vh;
+}
+.cabecera-chats{
+    text-align: start;
+    background-color: white;
+    height: 50px;
+    padding: 10px;
+    border: 3px solid white;
+}
+.chats-titulo{
+    font-family: Arial, sans-serif;
+    font-weight: 700; /* Negrita */
+    color: #22c55e;
+}
+
+.barra-busqueda{
+    border: none ;
+    width: auto;
+    height: auto;
+}
+.search-container2 {
+    position: relative;
+    flex: auto;
+}
+
+.search-input2 {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 2px solid white;
+    border-radius: 0;
+    background: #f5f5f5;
+    border-color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    outline-color: white;
+    color: #a9a9a9;
+}
+.search-input2:focus{
+    border-color: #22c55e;
+    outline-color: #22c55e;
+}
+.search-input2:hover{
+    outline-color: #22c55e;
+}
+
+/*////////////////////////////////////////////////*/
+.my-friends {
+    border-radius: 3px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Mantener los elementos en una sola línea */
+    padding: 10px;
+    gap: 10px; /* Espacio entre los elementos */
+    overflow: hidden; /* Evita el desbordamiento */
+}
+
+.image {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    width: 100px; /* Tamaño fijo de la imagen */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y los textos */
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.image2{
+    left: 50%;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+.text-container {
+display: flex;
+flex-direction: column;
+gap: 5px; /* Espacio entre los textos */
+flex-grow: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
+margin-right: 10px; /* Espacio entre los textos y los botones */
+min-width: 0; /* Necesario para que `flex-grow` funcione correctamente con `text-overflow` */
+cursor: pointer;
+}
+
+.text {
+margin: 0;
+white-space: nowrap; /* Impide que el texto salte de línea */
+overflow: hidden; /* Oculta el texto que se desborda */
+text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+}
+.text-roll{
+margin: 0;
+white-space: nowrap; /* Impide que el texto salte de línea */
+overflow: hidden; /* Oculta el texto que se desborda */
+text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
+color: #22c55e;
+}
+
+
+.conversacion{
+    flex: 2; /* Flex me */
+    text-align: center;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
