@@ -300,6 +300,7 @@ body {
     background-color: white;
     padding: 5px;
     cursor: pointer;
+    transition: width 1s;
 }
 .button-sidebar:hover {
     border-color: #22c55e;
@@ -753,7 +754,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     .page-container {
         grid-template-areas:
             "header"

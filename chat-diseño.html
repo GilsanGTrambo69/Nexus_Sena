@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Responsive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset y estilos básicos */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        }
+
+        /* Contenedor principal */
+        .chat-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        }
+
+        /* Contenedor del chat */
+        .chat-wrapper {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        height: 90vh;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        }
+
+        /* Section de la lista de chats */
+        .chat-list {
+        width: 30%;
+        background: #2c3e50;
+        color: #fff;
+        padding: 20px;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+        }
+
+        /* Section de la conversación */
+        .chat-box {
+        width: 70%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        }
+
+        /* Encabezado de conversación y botón */
+        .chat-header {
+        background: #3498db;
+        color: #fff;
+        padding: 15px;
+        position: relative;
+        }
+        .chat-header h2 {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        /* Botón para alternar vista en móviles */
+        .chat-toggle-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        }
+
+        /* Resto de la estructura (mensajes e input) */
+        .chat-messages {
+        flex-grow: 1;
+        padding: 15px;
+        overflow-y: auto;
+        background: #ecf0f1;
+        }
+        .chat-input {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        }
+        .chat-input input {
+        flex-grow: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+        .chat-input button {
+        margin-left: 10px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        background: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        }
+
+        /* Estilos responsivos para pantallas pequeñas */
+        @media (max-width: 768px) {
+        /* Se oculta la lista de chats por defecto */
+        .chat-wrapper {
+            width: 100%;
+        }
+        .chat-list {
+            display: none;
+        }
+        .chat-box {
+            width: 100%;
+        }
+        /* Mostrar el botón para alternar la vista */
+        .chat-toggle-btn {
+            display: inline-block;
+        }
+        }
+
+        /* Clases para alternar la vista en móvil */
+        .chat-list.open {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        }
+        .chat-box.hidden {
+        display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-wrapper" id="chatWrapper">
+        <!-- Section de la lista de chats -->
+            <section class="chat-list" id="chatList">
+                <h2>Chats</h2>
+                <ul>
+                <li class="chat-item">Chat 1</li>
+                <li class="chat-item">Chat 2</li>
+                <li class="chat-item">Chat 3</li>
+                </ul>
+            </section>
+
+            <!-- Section de la conversación -->
+            <section class="chat-box" id="chatBox">
+                <header class="chat-header">
+                <h2>Nombre de Usuario
+                    <!-- Botón que aparece en pantallas pequeñas -->
+                    <button class="chat-toggle-btn" id="toggleBtn">☰</button>
+                </h2>
+                </header>
+                <div class="chat-messages">
+                <!-- Aquí se mostrarán los mensajes -->
+                <p>Mensaje de ejemplje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempje de ejempo...</p>
+                </div>
+                <footer class="chat-input">
+                <input type="text" placeholder="Escribe un mensaje...">
+                <button>Enviar</button>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Seleccionamos los elementos
+        const chatList = document.getElementById("chatList");
+        const chatBox = document.getElementById("chatBox");
+        const toggleBtn = document.getElementById("toggleBtn");
+        const chatItems = document.querySelectorAll(".chat-item");
+
+        // Alternar entre la lista de chats y la conversación en móvil
+        toggleBtn.addEventListener("click", function() {
+        if (chatList.classList.contains("open")) {
+            chatList.classList.remove("open");
+            chatBox.classList.remove("hidden");
+        } else {
+            chatList.classList.add("open");
+            chatBox.classList.add("hidden");
+        }
+        });
+
+        // Al hacer clic en un chat de la lista, se debe mostrar la conversación
+        chatItems.forEach(item => {
+        item.addEventListener("click", function() {
+            // Aquí puedes cargar la conversación correspondiente
+            if (window.innerWidth <= 768) {
+            chatList.classList.remove("open");
+            chatBox.classList.remove("hidden");
+            }
+        });
+        });
+
+        // Cuando la pantalla se agranda, restauramos la vista original
+        window.addEventListener("resize", function() {
+        if (window.innerWidth > 768) {
+            chatList.classList.remove("open");
+            chatBox.classList.remove("hidden");
+        }
+        });
+
+    </script>
+</body>
+</html>

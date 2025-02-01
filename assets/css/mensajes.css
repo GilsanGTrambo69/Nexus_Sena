@@ -3,10 +3,10 @@
     background: whites;
     border-radius: 20px;
     padding: 10px;
-    overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
-    max-height: 89vh;
-    height: auto;
-    background-color: red;
+    overflow-y: hidden;  /* Cambié de 'hidden' a 'auto' para permitir scroll */
+    max-height: 85vh;  /* Limita la altura para evitar problemas en pantallas pequeñas */
+    background-color: white;
+    z-index: 0;
 }
 
 .main-content::-webkit-scrollbar{
@@ -18,16 +18,22 @@
     border-radius: 7px;
     padding: 15px;
     display: flex; /* Alinea los elementos en fila */
-    gap: 20px; /* Espaciado entre secciones */
+    gap: 2px; /* Espaciado entre secciones */
     justify-content: space-between; /* Distribuye el espacio entre secciones */
+    display: flex;
+    z-index: 3;
+    position: relative;
 }
 /*Diseño de la lista de chats */
 .chats{
-    flex: 1;
+    display: block;
     text-align: center;
     background-color: white;
-    width: 50px;
-    height: 80vh;
+    width: 35%;
+    padding: 5px;
+    overflow: hidden;
+    border: 3px solid white;
+    z-index: 1;
 }
 .cabecera-chats{
     text-align: start;
@@ -56,7 +62,7 @@
     width: 100%;
     padding: 12px 40px 12px 20px;
     border: 2px solid white;
-    border-radius: 0;
+    border-radius: 25px;
     background: #f5f5f5;
     border-color: white;
     font-size: 16px;
@@ -73,72 +79,220 @@
 .search-input2:hover{
     outline-color: #22c55e;
 }
-
-/*////////////////////////////////////////////////*/
-.my-friends {
-    border-radius: 3px;
-    border: 2px solid gray;
-    padding: 10px;
+.container-chats{
+    margin-top: 15px;
+    width: auto;
+    height: 80vh;
+    background-color: white;
+    padding: 5px;
+    overflow-y: auto;
 }
-.container {
+.container-chats::-webkit-scrollbar{
+    display: none;
+}
+
+.usuario-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Mantener los elementos en una sola línea */
-    padding: 10px;
-    gap: 10px; /* Espacio entre los elementos */
-    overflow: hidden; /* Evita el desbordamiento */
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    margin-top: 7px;
+    background-color: white;
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    transition: background-color 0.3s;
+}
+.usuario-container:hover{
+    background-color: #efefef;
 }
 
-.image {
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    width: 100px; /* Tamaño fijo de la imagen */
-    height: auto;
-    margin-right: 10px; /* Espacio entre la imagen y los textos */
-    border-radius: 50px;
+.foto-usuario {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: gray;
     width: 50px;
     height: 50px;
-    padding: 3px;
-    background-color: gray;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Evita que la imagen se haga más pequeña */
 }
 
-.image2{
-    left: 50%;
-    top: 50%;
+.foto-usuario2 {
+    border-radius: 50%;
     width: 45px;
     height: 45px;
-    border-radius: 50px;
-}
-.text-container {
-display: flex;
-flex-direction: column;
-gap: 5px; /* Espacio entre los textos */
-flex-grow: 1; /* Permite que el contenedor de texto ocupe el espacio restante */
-margin-right: 10px; /* Espacio entre los textos y los botones */
-min-width: 0; /* Necesario para que `flex-grow` funcione correctamente con `text-overflow` */
-cursor: pointer;
 }
 
-.text {
-margin: 0;
-white-space: nowrap; /* Impide que el texto salte de línea */
-overflow: hidden; /* Oculta el texto que se desborda */
-text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
-}
-.text-roll{
-margin: 0;
-white-space: nowrap; /* Impide que el texto salte de línea */
-overflow: hidden; /* Oculta el texto que se desborda */
-text-overflow: ellipsis; /* Muestra "..." al final si el texto es muy largo */
-color: #22c55e;
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que el texto ocupe todo el espacio disponible */
+    min-width: 0; /* Corrige problemas de flexbox */
 }
 
+.nombre-usuario,
+.mensaje-usuario {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Se adapta al tamaño disponible */
+    text-align: start;
+}
+
+.nombre-usuario {
+    font-size: 1.2rem;
+}
+
+.mensaje-usuario {
+    margin-top: 5px;
+    color: rgb(188, 186, 186);
+}
+
+
+
+/*////////////////////////////////////////////////*/
 
 .conversacion{
-    flex: 2; /* Flex me */
-    text-align: center;
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100vh; /* Ocupará toda la altura de la pantalla */
+    background: #f9f9f9;
+    border: 3px solid gray;
+    z-index: 1;
+    overflow: hidden; /* Evita que el contenido empuje el contenedor-bar fuera */
+}
+
+.conversacion2{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: red;
+}
+
+.button-chats{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: red;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.button-chats:hover{
+    background-color: rgb(141, 140, 140);
+}
+.button-chats-icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+.button-chats-icon:hover{
+    background-color: #e5e2e2;
+}
+
+.conversacion-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 50px;
+    background-color: white;
+}
+
+.nombre-usuario2{
+    font-family: Arial, sans-serif;
+    font-weight: 600; /* Negrita */
+    color: rgb(95, 95, 95);
+    margin-left: 30px;
+}
+.chat-mensajes{
+    flex-grow: 1;          /* Ocupa todo el espacio disponible */
+    overflow-y: auto;      /* Activa el scroll si hay demasiados mensajes */
+    padding: 15px;
+    background-color: #ecf0f1;
+    min-height: 0;         /* Evita que su crecimiento desplace el contenedor-bar */
+}
+
+.contenedor-bar{
+    flex-shrink: 0; /* Evita que se reduzca o desaparezca */
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.input-container {
+    position: relative;
+    flex: auto;
+}
+
+.input-bar {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background: #f5f5f5;
+    border-color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    outline-color: white;
+    color: #a9a9a9;
+}
+.input-bar:focus{
+    border-color: #22c55e;
+    outline-color: #22c55e;
+}
+.input-bar:hover{
+    outline-color: #22c55e;
+}
+
+.ki{
+    width: 100%;
+    height: 10000px;
+    background-color: red;
+}
+
+@media (max-width: 1000px) {
+    .chats{
+        display: none;
+        width: 100%;
+    }
+    
+    .button-chats-icon{
+        display: inline-block;    
+    }
+    .conversacion{
+        width: 100%;
+    }
+
+    .chats.open{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+    .conversacion.hidden{
+        display: none;
+    }
+
+}
+@media (max-height: 800px) {
+    .conversacion2 {
+        height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+    }
+    .chat-mensajes {
+        max-height: calc(100vh - 100px); /* Ajusta el espacio disponible */
+    }
 }

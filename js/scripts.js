@@ -1,5 +1,36 @@
-//<!--CAmbio de icono en el boton de like-->
-    //<script></script>
+//Sidebar
+const sidebar = document.getElementById('sidebar');
+const sidebarToggle = document.getElementById('sidebarToggle');
+
+sidebarToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+});
+
+// Cerrar el sidebar si se hace clic fuera de él
+document.addEventListener('click', (event) => {
+    const isClickInsideSidebar = sidebar.contains(event.target);
+    const isClickOnToggleButton = sidebarToggle.contains(event.target);
+
+    if (!isClickInsideSidebar && !isClickOnToggleButton && sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+    }
+});
+
+// Función para manejar cambios en el tamaño de la ventana
+function handleResize() {
+    if (window.innerWidth > 768) {
+        sidebar.classList.remove('active');
+    }
+}
+
+// Agregar listener para el evento resize
+window.addEventListener('resize', handleResize);
+
+// Llamar a handleResize inicialmente para establecer el estado correcto
+handleResize();
+
+
+
 //<!--Abrir la caja de comentarios-->
 
 const comentButton = document.getElementById('coment-button');
@@ -65,33 +96,4 @@ fileInput.addEventListener('change', function () {
 });
 
 
-//Sidebar
-const sidebar = document.getElementById('sidebar');
-const sidebarToggle = document.getElementById('sidebarToggle');
 
-sidebarToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-});
-
-// Cerrar el sidebar si se hace clic fuera de él
-document.addEventListener('click', (event) => {
-    const isClickInsideSidebar = sidebar.contains(event.target);
-    const isClickOnToggleButton = sidebarToggle.contains(event.target);
-
-    if (!isClickInsideSidebar && !isClickOnToggleButton && sidebar.classList.contains('active')) {
-        sidebar.classList.remove('active');
-    }
-});
-
-// Función para manejar cambios en el tamaño de la ventana
-function handleResize() {
-    if (window.innerWidth > 768) {
-        sidebar.classList.remove('active');
-    }
-}
-
-// Agregar listener para el evento resize
-window.addEventListener('resize', handleResize);
-
-// Llamar a handleResize inicialmente para establecer el estado correcto
-handleResize();
