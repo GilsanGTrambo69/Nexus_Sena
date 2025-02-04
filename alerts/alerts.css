@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     padding: 20px; /* ✅ Aplica padding uniforme */
-    box-sizing: border-box; /* ✅ Evita desbordamientos */
 }
 
 /* Contenedor principal */
@@ -64,5 +63,15 @@
 @media (max-width: 480px) {
     .main-container {
         padding: 15px; /* ✅ Asegura que el padding sea uniforme */
+        height: auto;
+    }
+    .green-text{
+        font-size: 16px;
+    }
+    .normal-text{
+        font-size: 13px;
+    }
+    .main-container button{
+        height: 40px;
     }
 }
