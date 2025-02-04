@@ -21,7 +21,7 @@ body {
 }
 .back-dark{
     padding: 20px;
-    display: none;
+    display: none; /*debe ir none */
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -760,7 +760,7 @@ body {
 }
 
 .modal-amigos{
-    display: block;
+    display: none;
     position: absolute;
     top: 80px;
     right: 0;

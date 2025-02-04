@@ -53,7 +53,7 @@
                     <div class="user-opc" id="user-opc">
                         <a href="miMuro.php"><button class="user-opc-b">Mi muro</button></a>
                         <a href="Configuracion.php"><button class="user-opc-b">Configuracion</button></a>
-                        <a href="#"><button class="user-opc-sesion">Cerrar cesion</button></a>
+                        <a href="#"><button class="user-opc-sesion">Cerrar sesion</button></a>
                     </div>
                 </div>
             </div>

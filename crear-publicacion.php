@@ -17,7 +17,7 @@
                     <input type="file" name="fileInput" id="fileInput" class="input-file" multiple>
                     <label for="fileInput" class="file-label">Adjuntar archivo</label>
                     <button class="button-modal-create" >Ubicacion</button>
-                    <div class="button-modal-create" id="mencionar-amigo">Mencionar amigo</div>
+                    <button class="button-modal-create" id="mencionar-amigo">Mencionar amigo</button>
                 </div>
 
                 <!--Modal de mencionar a un amigo en una publicacion-->
