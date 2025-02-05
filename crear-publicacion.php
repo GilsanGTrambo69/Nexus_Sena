@@ -24,17 +24,17 @@
                 <div class="modal-amigos" id="mencionar-amigo-modal">
                     <div class="notificacion-container">
                         <div class="notificacion-user">
-                            <div class="user-info-notificacion">
+                            <div class="user-info-mencionar">
                                 <!--Informacion del usuario en el comentario-->
-                                <div class="profile-picture-notificacion">
+                                <div class="profile-picture-mencionar">
                                     <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
                                 </div>
                                 <div class="user-info-noti">
                                     <div class="nombre-usurio-notificacion">Sena oficial</div>
                                     
-                                    <div class="tipo-notificacion">Tipo de notificacion</div>
+                                    <div class="rol-etiquetar">Rol de usuario</div>
                                 </div>
-                                <div class="right-text">Hora</div>
+                                <div class="etiquetar"><u>Etiquetar</u></div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,8 @@
             </form>
         </div>
     </div>
-    <script src="js/scripts-mencionar-amigo.js"></script>
     <script src="js/crear-publicacion.js"></script>
+    <script src="js/scripts-mencionar-amigo.js"></script>
+
 </body>
 </html>

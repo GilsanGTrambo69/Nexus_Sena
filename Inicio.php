@@ -53,8 +53,8 @@
                     </div>
                     <div class="contenedor-publicacion2">
                         <div class="contenedor-publicacion3">
-                            <p> Expo Empleo SENA Joven’: 20 mil oportunidades laborales para la juventud del país</p>
-                            <img src="./assets/img/meme.jpg" alt="publicacion img" class="publicacion-img">
+                            <p> Peperina es una canción progresiva que comienza y los otros instrumentos van apareciendo poco a poco. La canción se va acelerando con el tiempo y contiene solos de sintetizador. Fue compuesta principalmente por el pianista y vocalista Charly García. La letra cuenta la historia de una chica llamada Peperina quien en realidad es Patricia Perea, una periodista de rock nacida en Córdoba que trabajaba en la revista Expreso Imaginario. Criticó una actuación de la banda en Córdoba por lo que, sin poder aceptar las críticas y en forma de represalia, Charly escribió una canción que la presenta como una groupie despechada.</p>
+                            <img src="./assets/img/peperina.jpg" alt="publicacion img" class="publicacion-img">
                         </div>
                     </div>
                     <div class="publicacion-buttons">
@@ -62,7 +62,7 @@
                             <p class="button-text">No Me gusta</p>
                             <button id="like-btn">
                                 <span id="like-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="green" stroke="#22c55e" stroke-width="2" class="corazon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="corazon">
                                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                                     </svg>
                                 </span>
