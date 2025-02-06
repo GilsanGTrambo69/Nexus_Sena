@@ -43,7 +43,7 @@
                 <div class="ubicacion-container">
                     <img src="./assets/img/Ubicacion.png" alt="">
                     <input class="input-ubicacion" type="text" name="" id="input-ubicacion" placeholder="...">
-                    <input type="text">
+                    <div>aqui se mencionan los amigos </div>
                 </div>
                 <div class="create-container">
                     <textarea class="text-post" name="" id="text-post" placeholder="Escribe aqui..." maxlength="1000"></textarea>

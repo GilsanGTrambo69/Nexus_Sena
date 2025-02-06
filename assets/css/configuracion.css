@@ -1,0 +1,61 @@
+.header-config{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.back-icon-config{
+    cursor: pointer;
+}
+
+.nexus-logo{
+    display: flex;
+    top: 10px;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.nexus-logo img{
+    width: 180px;
+    height: 110px;
+    cursor: pointer;
+    -webkit-user-drag: none; /* Evita arrastrar la imagen */
+}
+
+.titulo-config{
+    color: black;
+    font-size: 25px;
+}
+.subtitulo-config{
+    color: black;
+    font-size:17px;
+}
+.opciones-container{
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 60px;
+    padding: 5px;
+    align-items: center;
+}
+.opciones-container:hover{
+    background-color: rgb(231, 231, 231);
+}
+.opc-con{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    cursor: pointer;
+    width: auto;
+    align-items: center; /*CENTRA VERTICALMENTE */
+}
+
+.text-config{
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

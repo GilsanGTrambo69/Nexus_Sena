@@ -375,6 +375,12 @@ body {
     padding: 5px;
     margin-top: 20px;
 }
+.separador-post{
+    border-bottom: 2px solid #a9a9a9; /* Grosor, estilo y color */
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
 .publicacion-header{
     display: flex;
     align-items: center;
@@ -481,6 +487,7 @@ body {
     height: 100%; /* O usa una altura fija si es necesario */
     position: relative;
 }
+
 /*Contenedor donde se pondran los comenatrios*/
 .comentario{
     flex: 1; /* Ocupa todo el espacio disponible */
@@ -491,10 +498,28 @@ body {
     padding: 10px 10px;
     max-height: 300px;
 }
-/*Oculta la scroll bar de la caja de comentarios*/
+
+/*Estilo del fondo de la barra */
+.comentario::-webkit-scrollbar {
+    width: 10px; /* Ancho vertical */
+    height: 10px; /* Alto horizontal */
+    border-radius: 5px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+/*Estilo de la barra deslizante */
+.comentario::-webkit-scrollbar-thumb {
+    background: #acabab;
+    border-radius: 5px;
+}
+.comentario::-webkit-scrollbar-thumb:hover {
+    background: #828181;
+}
+
+/*Oculta la scroll bar de la caja de comentarios
 .comentario::-webkit-scrollbar{
     display: none;
-}
+}*/
 .comentario1{
     width: 100%;
     height: auto;
@@ -531,49 +556,39 @@ body {
     text-decoration-color: gray;
 }
 
-.escribir-comentario{
-    margin-top: 5px;
-    width: 100%;
-    height: 40px;
-    display: inline-block; /*me pone varias cosas en una misma linea*/
-    gap: 10px; /* Espaciado entre el contenedor y el input */
-    padding: 5px;
-    background-color: white;
-    margin: 0 0 10px 0;
+.contenedor-bar{
+    flex-shrink: 0; /* Evita que se reduzca o desaparezca */
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-.escribir-comentario input {
-    width: 95%;
-    height: 40px;
+.input-container {
+    position: relative;
+    flex: auto;
+}
+
+.input-bar {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 25px;
     background: #f5f5f5;
     border-color: white;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    outline-color: white;
     color: #a9a9a9;
-    padding-left: 20px;
 }
-.escribir-comentario input:focus{
-    border-color: #1daa51;
-    outline-color: #1daa51;
+.input-bar:focus{
+    border-color: #22c55e;
+    outline-color: #22c55e;
 }
-.escribir-comentario input:hover{
-    border-color: #1daa51;
+.input-bar:hover{
+    outline-color: #22c55e;
 }
-.send-coment{
-    top: 50%;
-    display: inline-block; /*me pone varias cosas en una misma linea*/
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #1daa51;
-    cursor: pointer;
-    gap: 20px; /* Espaciado entre el contenedor y el input */
-    padding: 4px 4px;
-}
-.send-coment:hover{
-    background-color: #199245;
-}
+
 
 /*Modal para crear un post*/
 .create-post{
@@ -583,7 +598,7 @@ body {
     padding: 10px;
     border: 2px solid #888;
     max-width: 1200px;
-    max-height: 560px;
+    height: auto;
     top: 0;
     justify-content: center;
     align-items: center;
@@ -847,6 +862,7 @@ body {
     }
 
     .sidebar {
+        padding-top: 50px;
         position: fixed;
         left: -250px;
         top: 0;
@@ -880,7 +896,7 @@ body {
 
 @media (max-width: 800px) {
     .main-content{
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 40px 10px;
     }
 
     .text-button-post{
@@ -890,6 +906,14 @@ body {
 
 @media (max-width: 600px) {
     .main-content{
-        padding: 10px 0px 0px 0px;
+        padding: 10px 0px 40px 0px;
+    }
+    .cancelar-button{
+        width: 100px;
+    }
+    .publicar-button{
+        width: 100px;
+    }
+    .escribir-comentario input{
     }
 }

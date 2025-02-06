@@ -154,21 +154,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="escribir-comentario">
-                            <form action="">
-                                <input type="text" placeholder="  Agrega un nuevo comentario">
-                                <div class="send-coment">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                    </svg>
-                                </div>
-                            </form>
+                        <div class="contenedor-bar">
+                            <div class="input-container">
+                                <input type="text" class="input-bar" placeholder="Esbribe un mensaje">
+                                <svg class="search-icon" width= "30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 16 16 12 12 8"></polyline>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </div>
                         </div>
                     </div>
+                    <div class="separador-post"></div>
                 </div>
-
-                
             </div>
             <!-- Corazón con borde y relleno verde ->
             <svg-- width="24" height="24" viewBox="0 0 24 24" fill="#22c55e" stroke="#22c55e" stroke-width="2">
