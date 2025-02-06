@@ -49,6 +49,7 @@
     cursor: pointer;
     width: auto;
     align-items: center; /*CENTRA VERTICALMENTE */
+    margin-left: 10px;
 }
 
 .text-config{

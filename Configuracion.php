@@ -28,15 +28,17 @@
         <main class="main-content">
             <div class="all-post">
                 <div class="header-config">
-                    <div class="back-icon-config">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="12" fill="#00d100"/>
-                            <g transform="translate(6, 6)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 6H2"/>
-                                <path d="M6 2L2 6l4 4"/>
-                            </g>
-                        </svg>
-                    </div>
+                    <a href="Inicio.php">
+                        <div class="back-icon-config">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                <g transform="translate(6, 6)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 6H2"/>
+                                    <path d="M6 2L2 6l4 4"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
                     <div class="nexus-logo">
                         <img src="assets/img/logo-sena.png" alt="logo-nexus">
                     </div>
