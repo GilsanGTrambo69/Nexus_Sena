@@ -26,10 +26,12 @@
 .titulo-config{
     color: black;
     font-size: 25px;
+    font-weight: 500;
 }
 .subtitulo-config{
     color: black;
     font-size:17px;
+    font-weight: 500;
 }
 .opciones-container{
     display: flex;
@@ -52,11 +54,126 @@
     margin-left: 10px;
 }
 
-.text-config{
-
-}
 
 a{
     text-decoration: none;
     color: black;
 }
+
+.info-container{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.subtitulo-verde{
+    color: #22c55e;
+    font-size: 20px;
+}
+.text-gray{
+    color: gray;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.editar-info{
+    width: 100%;
+    text-align: right;
+    color: #22c55e;
+    text-decoration: underline;
+}
+.editar-info-text{
+    cursor: pointer;
+}
+
+.editar-informacion-back{
+    padding: 20px;
+    display: none; /*debe ir none */
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    overflow: none;
+}
+.editar-informacion{
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 2px solid #888;
+    max-width: 1000px;
+    height: auto;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.titulo-green{
+    color: #22c55e;
+    font-size: 24px;
+}
+
+/* */
+
+.titulo2{
+    color: #22c55e;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px;
+}
+.informacion-detalle2{
+    width: 100%;
+    padding: 20px;
+}
+.titulo-informacion2{
+    color: #888; /* Gris claro */
+    font-size: 20px; /* Tamaño pequeño */
+    font-weight: normal; /* Texto normal */
+}
+.informacion2 {
+    display: block; /* Asegura que el nombre esté debajo de la etiqueta */
+    font-size: 30px; /* Tamaño más grande */
+    color: #000; /* Negro para el nombre */
+    margin-top: 2px; /* Espacio entre el título y el nombre */
+}
+
+.fila2 {
+    display: flex; /* Aplica flexbox */
+    justify-content: space-between; /* Espacia los elementos entre sí */
+    align-items: center; /* Alinea verticalmente al centro */
+    margin-bottom: 10px; /* Espacio entre filas */
+}
+.fila2 input{
+    width: 60%;
+    border-color: white;
+    border: 3px solid gray;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 20px;
+    color: gray;
+    padding-left: 10px;
+}
+.fila2 input:hover{
+    outline: none;
+}
+.fila2 input:focus {
+    outline: none;
+}
+.green-link2 {
+    color: #22c55e;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: #22c55e;
+    cursor: pointer;
+}
+.buttons-container{
+    text-align: right;
+}
+
+@media (max-width:)
