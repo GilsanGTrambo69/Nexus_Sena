@@ -860,7 +860,9 @@ body {
     cursor: pointer;
 }
 
-
+.falso{
+    width: 5px;
+}
 
 /* Responsive Design */
 @media (max-width: 1300px) {
