@@ -868,8 +868,8 @@ body {
 @media (max-width: 1300px) {
     .page-container {
         grid-template-areas:
-            "header"
-            "main";
+            "header header"
+            "main main";
         grid-template-columns: 1fr;
     }
     .main-content{

@@ -267,3 +267,53 @@ a{
 .renew-password.error:focus{
     border-color: red;
 }
+
+/*Aprtado de notificaciones*/
+.notification-container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+.custom-checkbox input {
+    display: block;
+}
+.custom-checkbox input[type="checkbox"] {
+    transform: scale(2); /* Aumenta el tamaño en un 50% */
+}
+
+.checkmark {
+    width: 60px;
+    height: 60px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #22c55e;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #22c55e;
+    border-color: #22c55e;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    content: '';
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
