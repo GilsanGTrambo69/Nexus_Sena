@@ -21,7 +21,14 @@ body {
 .banner-m {
     position: relative;
     height: 300px;
-    background-image: url('https://noticiastrabajo.huffingtonpost.es/uploads/images/2022/12/reto-visual-ilusion-1200-675.webp');
+    background-image: url(assets/img/peperina.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner-m img {
+    position: relative;
+    height: 300px;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
@@ -298,6 +305,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: none;
 }
@@ -306,14 +314,19 @@ body {
     margin: 5% auto;
     padding: 10px;
     border: 2px solid #888;
-    width: 530px;
+    max-width: 530px;
     height: 400px;
     top: 0;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
+.input-container {
+    width: auto;
+    margin: 10px;
 
+}
 .input-file1{
     display: none;
 }
@@ -325,7 +338,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 20px;
+    margin: 10px 10px 10px 0;
 }
 .file-label1:hover{
     border-color: #22c55e;
@@ -333,8 +346,8 @@ body {
 }
 .file-preview2{
     left: 50%;
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    height: 150px;
     border: 3px solid rgb(165, 162, 162);
     border-radius: 5px;
     overflow: auto;
@@ -342,6 +355,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.save-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button-guardar {
     width: 40%;
     height: 50px;
@@ -443,5 +465,6 @@ select option {
 
     .profile-details-m {
         text-align: center;
+        line-height: 1;
     }
 }

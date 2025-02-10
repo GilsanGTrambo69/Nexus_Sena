@@ -16,7 +16,6 @@
                 <div class="create-post-buttons-container"> 
                     <input type="file" name="fileInput" id="fileInput" class="input-file" multiple>
                     <label for="fileInput" class="file-label">Adjuntar archivo</label>
-                    <button type="button" class="button-modal-create" >Ubicacion</button>
                     <button type="button" class="button-modal-create" id="mencionar-amigo">Mencionar amigo</button>
                 </div>
 
@@ -41,9 +40,8 @@
                 </div>
                 <br>
                 <div class="ubicacion-container">
-                    <img src="./assets/img/Ubicacion.png" alt="">
-                    <input class="input-ubicacion" type="text" name="" id="input-ubicacion" placeholder="...">
-                    <div>aqui se mencionan los amigos </div>
+
+                    <div>aqui se mencionan los amigos :v</div>
                 </div>
                 <div class="create-container">
                     <textarea class="text-post" name="" id="text-post" placeholder="Escribe aqui..." maxlength="1000"></textarea>

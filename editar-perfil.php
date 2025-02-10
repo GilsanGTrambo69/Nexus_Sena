@@ -225,32 +225,42 @@
             <span class="titulo">Foto de perfil</span>
             <br>
             <br>
-            <input type="file" name="fileInput1" id="fileInput1" class="input-file1">
-            <label for="fileInput1" class="file-label1">Adjuntar archivo</label>
-            <center>
-                <div class="file-preview2" id="filePreview1"></div>
-                <br>
+            <div class="input-container">
+                <input type="file" name="fileInput1" id="fileInput1" class="input-file1">
+                <label for="fileInput1" class="file-label1">Adjuntar archivo</label>
+            </div>
+
+            <br>
+            <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
+            <div class="file-preview2" id="filePreview1"></div>
+            <br>
+            <div class="save-container">
                 <button class="button-guardar">Guardar</button>
-            </center>        
+            </div>
         </div>
     </div>
+
     
-    <!--Modal para cambiar la foto de Portada-->
+    <!--Segundo modal-->
     <div class="cambiar-foto-back" id="cambiar-back2">
         <div class="cambiar-foto">
-            <span class="titulo">Foto de perfil</span>
+            <span class="titulo">Cambiar fondo de perfil</span>
             <br>
             <br>
-            <input type="file" name="fileInput2" id="fileInput2" class="input-file1">
-            <label for="fileInput2" class="file-label1">Adjuntar archivo</label>
-            <center>
-                <div class="file-preview2" id="filePreview2"></div>
-                <br>
+            <div class="input-container">
+                <input type="file" name="fileInput2" id="fileInput2" class="input-file1" >
+                <label for="fileInput2" class="file-label1">Adjuntar archivo</label>
+            </div>
+
+            <br>
+            <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
+            <div class="file-preview2" id="filePreview2"></div>
+            <br>
+            <div class="save-container">
                 <button class="button-guardar">Guardar</button>
-            </center>        
+            </div>
         </div>
     </div>
-    
 
     <!--Vista previa-->
     <script src="js/scripts-editar-perfil.js?v=1.0"></script>

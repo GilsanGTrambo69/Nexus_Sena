@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Dinámica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .input-container {
+            margin-bottom: 10px;
+        }
+        .input-container input {
+            padding: 8px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .btn {
+            padding: 8px 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-remove {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Crear Encuesta</h2>
+    <div id="opciones-container">
+        <div class="input-container">
+            <input type="text" placeholder="Opción 1">
+        </div>
+    </div>
+    <button class="btn" id="agregar-opcion">Añadir Opción</button>
+
+    <script>
+        let contador = 1; // Contador de opciones
+
+        document.getElementById("agregar-opcion").addEventListener("click", function () {
+            contador++;
+
+            const container = document.getElementById("opciones-container");
+            const div = document.createElement("div");
+            div.className = "input-container";
+            
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = `Opción ${contador}`;
+
+            const botonEliminar = document.createElement("button");
+            botonEliminar.innerText = "Eliminar";
+            botonEliminar.className = "btn btn-remove";
+            botonEliminar.addEventListener("click", function () {
+                div.remove();
+                actualizarMarcadores();
+            });
+
+            div.appendChild(input);
+            div.appendChild(botonEliminar);
+            container.appendChild(div);
+        });
+
+        function actualizarMarcadores() {
+            const inputs = document.querySelectorAll("#opciones-container input");
+            contador = 0;
+            inputs.forEach((input, index) => {
+                contador++;
+                input.placeholder = `Opción ${contador}`;
+            });
+        }
+    </script>
+
+</body>
+</html>

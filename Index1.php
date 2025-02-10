@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/plantilla.css">
-    <link rel="stylesheet" href="./assets/css/mi-muro.css">
-    <link rel="stylesheet" href="./assets/css/page-container2.css">
-    <title>Perfil de Usuario</title>
+    <title>Plantilla pagina de inicio</title>
     <style>
         * {
             margin: 0;
@@ -16,29 +14,21 @@
         }
 
         body {
-            background-color: #f5f5f5;
-        }
-
-        .sidebar {
-            display: none;
-        }
-        .sidebar-toggle{
-            display: none;
-        }
-
-        .profile-picture-m{
-            text-align: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
         }
     </style>
 </head>
 <body>
     <div class="page-container">
         <!-- Header -->
-        <?php require 'cabecera.php'; ?>
+
+        <?php
+            require 'cabecera.php';
+        ?>
 
 
         <!-- Sidebar -->
-        
         <?php
             require 'sidebar.php';
         ?>
@@ -46,51 +36,23 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="all-post">
-                <div class="profile-container-m">
-                    <div class="banner-m">
-                        <img src="assets/img/peperina.jpg" alt="">
-                        <div class="profile-picture-m">
-                            <img src="./assets/img/foto-perfil.png" alt="Foto de perfil">
-                        </div>
-                    </div>
-                    <div class="profile-info-m">
-                        <div class="profile-header-m">
-                            <div class="name-section-m">
-                                <h1 class="name-m">Omar Alejandro Galvis Espitia</h1>
-                                <p class="role-m">Aprendiz - Etapa Electiva</p>
-                            </div>
-                            <a href="editar-perfil.php" class="edit-button-m">
-                                Editar mi información
-                                <svg class="edit-icon-m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="profile-details-m">
-                            <p>ADSO- 2847293</p>
-                            <p>Quebrajacho - Fusagasugá</p>
-                            <p>Edad 21 años</p>
-                        </div>
-                        <a href="ver-perfil-completo.php" class="view-profile-m">Ver perfil completo</a>
-                    </div>
-                </div>
                 <button class="create-post-button" id="create-post-button">Crear una Publicacion</button>
-            <!--Contenedor de una publicacion-->
-            <div class="contenedor-publicacion">
+
+                <!--Contenedor de una publicacion-->
+                <div class="contenedor-publicacion">
                     <div class="publicacion-header">
                         <div class="profile-picture">
                             <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
                         </div>
                         <div class="user-info">
-                            <div class="Nombre-usuario">Alejandro</div>
+                            <div class="Nombre-usuario">Sena oficial</div>
                             <div class="fecha-publicacion">Fecha de la publicacion</div>
                         </div>
                     </div>
                     <div class="contenedor-publicacion2">
                         <div class="contenedor-publicacion3">
-                            <p> Peperina es una canción progresiva que comienza y los otros instrumentos van apareciendo poco a poco. La canción se va acelerando con el tiempo y contiene solos de sintetizador. Fue compuesta principalmente por el pianista y vocalista Charly García. La letra cuenta la historia de una chica llamada Peperina quien en realidad es Patricia Perea, una periodista de rock nacida en Córdoba que trabajaba en la revista Expreso Imaginario. Criticó una actuación de la banda en Córdoba por lo que, sin poder aceptar las críticas y en forma de represalia, Charly escribió una canción que la presenta como una groupie despechada.</p>
-                            <img src="./assets/img/peperina.jpg" alt="publicacion img" class="publicacion-img">
+                            <p> Expo Empleo SENA Joven’: 20 mil oportunidades laborales para la juventud del país</p>
+                            <img src="./assets/img/publicacion2.png" alt="publicacion img" class="publicacion-img">
                         </div>
                     </div>
                     <div class="publicacion-buttons">
@@ -190,48 +152,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contenedor-bar">
-                            <div class="input-container">
-                                <input type="text" class="input-bar" placeholder="Esbribe un mensaje">
-                                <svg class="search-icon" width= "30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 16 16 12 12 8"></polyline>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </div>
+                        <div class="escribir-comentario">
+                            <form action="">
+                                <input type="text" placeholder="  Agrega un nuevo comentario">
+                                <div class="send-coment">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="separador-post"></div>
                 </div>
+
+                
             </div>
-    </main>
-    <!--Eliminar post confirmacion-->
-
-    <div class="eliminar-back" id="eliminar-back1">
-        <div class="eliminar-post-container">
-            <center>
-                <img src="assets/img/alert-red.png" alt="">
-                <br>
-                <br>
-                <br>
-                <br>
-                <p>Desea eliminar esta publicación, una vez eliminada no se podrá recuperar nuevamente.</p>
-                <br>
-                <br>
-                <div>
-                    <button class="cancelar" id="cancelar-eliminacion1">Cancelar</button>
-                    <button class="eliminar-post-button">Eliminar</button>
-                </div>
-            </center>
-        </div>
+            <!-- Corazón con borde y relleno verde ->
+            <svg-- width="24" height="24" viewBox="0 0 24 24" fill="#22c55e" stroke="#22c55e" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg-->
+        </main>
+        <!-- Toggle Button -->
+        <button class="sidebar-toggle" id="sidebarToggle">☰</button>
     </div>
+    <?php 
+    include './assets/php/crear-publicacion.php';
+    ?>
+    <script src="js/scripts.js" ></script>
+    <script src="js/scripts-ver-perfil.js"></script>
 
-    <?php include 'crear-publicacion.php';?>
-    
-    <!--Vista previa-->
-    <script src="js/scripts.js"></script>
-    <script src="js/scripts-miMuro.js"></script>
-    <script src="js/scripts-caja-comentarios.js"></script>
 </body>
 </html>
-

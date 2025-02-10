@@ -860,8 +860,8 @@ body {
     cursor: pointer;
 }
 
-.falso{
-    width: 5px;
+.like-fill{
+    fill: #22c55e;
 }
 
 /* Responsive Design */
@@ -873,7 +873,7 @@ body {
         grid-template-columns: 1fr;
     }
     .main-content{
-        padding: 10px 40px 40px 40px;
+        padding: 10px 100px 100px 100px;
     }
 
     .sidebar {
@@ -905,22 +905,98 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .main-content{
+        padding: 10px 60px 60px 60px;
+    }
 
+    .main-content::-webkit-scrollbar {
+        width: 9px; /* Ancho vertical */
+    }
+    .modal-amigos::-webkit-scrollbar {
+        width: 9px; /* Ancho vertical */
+    }
+    .comentario::-webkit-scrollbar {
+        width: 9px; /* Ancho vertical */
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-content{
+        padding: 10px 30px 30px 30px;
+    }
+
+    .main-content::-webkit-scrollbar {
+        width: 8px; /* Ancho vertical */
+    }
+    .modal-amigos::-webkit-scrollbar {
+        width: 8px; /* Ancho vertical */
+    }
+    .comentario::-webkit-scrollbar {
+        width: 8px; /* Ancho vertical */
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-content{
+        padding: 10px 10px 10px 10px ;
+    }
+
+    .main-content::-webkit-scrollbar {
+        width: 7px; /* Ancho vertical */
+    }
+    .modal-amigos::-webkit-scrollbar {
+        width: 7px; /* Ancho vertical */
+    }
+
+    .contenedor-publicacion3 p{
+        font-size: 0.9em;
+    }
+    .comentario::-webkit-scrollbar {
+        width: 7px; /* Ancho vertical */
+    }
+    
+}
 
 @media (max-width: 800px) {
     .main-content{
-        padding: 10px 10px 40px 10px;
+        padding: 4px 4px 40px 4px;
+    }
+
+    .main-content::-webkit-scrollbar {
+        width: 6px; /* Ancho vertical */
+    }
+    .modal-amigos::-webkit-scrollbar {
+        width: 6px; /* Ancho vertical */
+    }
+    .comentario::-webkit-scrollbar {
+        width: 6px; /* Ancho vertical */
     }
 
     .text-button-post{
         display: none;
     }
+
+    .contenedor-publicacion3 p{
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 600px) {
     .main-content{
-        padding: 10px 0px 40px 0px;
+        padding: 4px 4px 40px 4px;
     }
+
+    .main-content::-webkit-scrollbar {
+        width: 5px; /* Ancho vertical */
+    }
+    .modal-amigos::-webkit-scrollbar {
+        width: 5px; /* Ancho vertical */
+    }
+    .comentario::-webkit-scrollbar {
+        width: 5px; /* Ancho vertical */
+    }
+
     .cancelar-button{
         width: 100px;
     }

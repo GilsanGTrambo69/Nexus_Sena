@@ -59,10 +59,10 @@
                     </div>
                     <div class="publicacion-buttons">
                         <div class="button-container">
-                            <p class="button-text">No Me gusta</p>
-                            <button id="like-btn">
+                            <p class="button-text"> Me gusta</p>
+                            <button id="like-btn" >
                                 <span id="like-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="corazon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="corazon" id="corazon-id">
                                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                                     </svg>
                                 </span>
@@ -180,6 +180,8 @@
     include 'crear-publicacion.php';
     ?>
     <script src="js/scripts.js" ></script>
+    <script src="js/scripts-caja-comentarios.js"></script>
+    <script src="js/scripts-like-publicacion.js"></script>
 
 </body>
 </html>
