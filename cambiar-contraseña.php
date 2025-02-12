@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="text-container">
-                        <div class="editar-info2" ><span class="editar-info-text2" id="">¿Olvidaste la contraseña?</span></div>              
+                        <div class="editar-info2" id="forget-password"><span class="editar-info-text2" id="">¿Olvidaste la contraseña?</span></div>              
                         <div class="subtitulo-config">Al cambiar de contraseña se cerrara sesión en otros dispositivos.</div>
                         <div class="ctn-btn">
                             <button id="change-password" class="publicar-button" type="#">Cambiar contraseña</button>
@@ -76,6 +76,26 @@
             </div>
         </main>
     </div>
+    <!--Modal para introducir el correo para recuperar la contraseña-->
+    <div class="back-dark" id="cambiar-contraseña-configuracion">
+        <div class="change-password-container">
+            <div class="container-text-t">
+                <div class="normal-t">Ingresa tu correo para enviar un link de validacion</div>
+                <div class="green-t">introduce correo</div>
+            </div>
+            <div class="input-container-t">
+                <input type="text">
+            </div>
+            <div class="send-mail-container">
+                <div class="send-mail">Volver a enviar</div>
+            </div>
+            <div class="button-container-t">
+                <button class="close-button-t" id="close-modal">Atras</button>
+                <button  class="confirm-button-t" id="confirm-button-t">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/scripts-cambiar-contraseña.js"></script>
 </body>
 </html>

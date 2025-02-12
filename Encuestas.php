@@ -41,8 +41,8 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="all-post">
-                <button class="create-post-button" id="create-post-button">Crear una Encuesta</button>
-
+                <button class="create-post-button" id="crear-encuesta-button">Crear una Encuesta</button>
+                <?php require 'crear-encuesta-modal.php';?>
                 <!--Contenedor de una publicacion-->
                 <div class="contenedor-publicacion">
                     <div class="publicacion-header">

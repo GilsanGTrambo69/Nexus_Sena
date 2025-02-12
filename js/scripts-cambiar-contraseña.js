@@ -12,15 +12,32 @@ document.getElementById('change-password').addEventListener('click', function() 
         errorNewPassword.style.display = 'block';
     } else {
         newPassword.classList.remove('error');
+        newPassword.classList.add('pass');
         errorNewPassword.style.display = 'none';
-    }
+    }5
     
     if(newPassword.value === reNewPassword.value) {
         errorReNewPassword.style.display = 'none';
         reNewPassword.classList.remove('error');
+        reNewPassword.classList.add('pass');
     } else {
         reNewPassword.classList.add('error');
         errorReNewPassword.style.display = 'block';
     }
 })
 
+
+
+
+//abrir modal para cambiar la contraseña
+const backModal = document.getElementById('cambiar-contraseña-configuracion');
+const closeModal = document.getElementById('close-modal');
+const openModal = document.getElementById('forget-password');
+
+openModal.addEventListener('click', () => {
+    backModal.style.display = 'block';
+})
+
+closeModal.addEventListener('click', () => {
+    backModal.style.display = 'none';
+})
