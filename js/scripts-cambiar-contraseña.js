@@ -26,7 +26,18 @@ document.getElementById('change-password').addEventListener('click', function() 
     }
 })
 
+document.getElementById('confirm-button-t').addEventListener('click', function(){
+    const redTextAlert = document.getElementById('hide-red-text2');
+    const inputMail = document.getElementById('mail-forget-password');
 
+    if (inputMail.length == 0 ){
+        inputMail.classList.add('error');
+        redTextAlert.style.display = 'block'
+    } else {
+        inputMail.classList.remove('error');
+        redTextAlert.style.display = 'none';
+    }
+})
 
 
 //abrir modal para cambiar la contraseña

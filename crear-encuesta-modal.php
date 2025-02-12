@@ -20,7 +20,6 @@
                         </div>
                         <div id="opciones-container">
                             <div class="input-container-e">
-
                             </div>
                         </div>
                     </div>

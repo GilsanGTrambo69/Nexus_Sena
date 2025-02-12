@@ -76,25 +76,7 @@
             </div>
         </main>
     </div>
-    <!--Modal para introducir el correo para recuperar la contraseña-->
-    <div class="back-dark" id="cambiar-contraseña-configuracion">
-        <div class="change-password-container">
-            <div class="container-text-t">
-                <div class="normal-t">Ingresa tu correo para enviar un link de validacion</div>
-                <div class="green-t">introduce correo</div>
-            </div>
-            <div class="input-container-t">
-                <input type="text">
-            </div>
-            <div class="send-mail-container">
-                <div class="send-mail">Volver a enviar</div>
-            </div>
-            <div class="button-container-t">
-                <button class="close-button-t" id="close-modal">Atras</button>
-                <button  class="confirm-button-t" id="confirm-button-t">Confirmar</button>
-            </div>
-        </div>
-    </div>
+        <?php include 'olvide-contraseña.php'; ?>
 
     <script src="js/scripts-cambiar-contraseña.js"></script>
 </body>

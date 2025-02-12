@@ -37,7 +37,7 @@
 }
 .titulo-encuesta input{
     width: 30%;
-    height: 30px;
+    height: 40px;
     border: 3px solid gray;
     outline: none;
     font-size: 17px;
@@ -90,6 +90,10 @@
 }
 .button-remove-option{
     background-color: red;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
 }
 
 .btn-añadir-container{
@@ -115,7 +119,7 @@
 }
 .input-opcion{
     width: 30%;
-    height: 30px;
+    height: 40px;
     border: 3px solid gray;
     outline: none;
     font-size: 17px;
@@ -147,7 +151,7 @@
 .btn-remove:hover{
     background-color: rgb(240, 0, 0);
 }
-
+/*Diseño del checkbutton de las opciones de encuestas */
 .label-container{
     display: block;
     position: relative;
@@ -177,12 +181,12 @@
     background-color: #eee;
 }
 
-/* On mouse-over, add a grey background color */
+
 .label-container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #5ef194;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* color de la marca check */
 .label-container input:checked ~ .checkmark {
     background-color: #22c55e;
 }

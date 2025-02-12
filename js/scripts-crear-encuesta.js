@@ -27,7 +27,7 @@ document.getElementById("agregar-opcion").addEventListener("click", function () 
         container.innerHTML = '';
         tituloEncuesta.value = "";
         contador = 0
-    } )
+    } ) 
 
     const labelContainer = document.createElement("label");
     labelContainer.className = "label-container";
@@ -50,9 +50,15 @@ document.getElementById("agregar-opcion").addEventListener("click", function () 
     input.type = "text";
     input.className = "input-opcion"
     input.placeholder = `Opción ${contador}`;
+    if (input.valor = null) {
+        input.placeholder = "Opcion de respuesta abierta";
+    } else {
+        input.placeholder = `Opción ${contador}`;
+    }
+
 
     const botonEliminar = document.createElement("button");
-    botonEliminar.innerText = "Eliminar";
+    botonEliminar.innerText = "X";
     botonEliminar.className = "btn btn-remove";
     botonEliminar.addEventListener("click", function () {
         div.remove();
@@ -71,7 +77,7 @@ function actualizarMarcadores() {
         inputs.forEach((input, index) => {
             contador++;
             input.placeholder = `Opción ${contador}`;
-        
     })
+
 } 
 
