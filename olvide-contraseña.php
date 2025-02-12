@@ -29,5 +29,6 @@
             </form>
         </div>
     </div>
+    <script src="js/scripts-crear-noticas.js"></script>
 </body>
 </html>
