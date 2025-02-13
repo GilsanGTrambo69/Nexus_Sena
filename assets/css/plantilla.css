@@ -318,13 +318,14 @@ body {
 /* Main Content Styles */
 .main-content {
     grid-area: main;
-    background: whites;
+    background: gray;
     border-radius: 20px;
     padding: 10px 80px 80px 80px;
     overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
     max-height: 85vh;
     height: auto;
 }
+
 
 /*Estilo del fondo de la barra */
 .main-content::-webkit-scrollbar {
@@ -387,6 +388,7 @@ body {
     height: auto;
     padding: 5px;
     margin-top: 20px;
+    background-color: white;
 }
 .separador-post{
     border-bottom: 2px solid #a9a9a9; /* Grosor, estilo y color */
@@ -629,6 +631,7 @@ body {
 .input-file{
     display: none;
 }
+
 .file-label{
     padding: 10px 22px;
     background-color: white;

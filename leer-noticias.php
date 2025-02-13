@@ -20,9 +20,7 @@
             background-color: #f0f0f0;
             min-height: 100vh;
         }
-        .main-content{
-            max-height: 80vh !important;
-        }
+
     </style>
 </head>
 <body>
@@ -43,6 +41,60 @@
         <main class="main-content">
             <div class="all-post">
                 <!--Contenedor de una Noticia-->
+                <div class="contendor-noticia">
+                    <div class="header-noticia">
+                        <h2>Titulo de una noticia</h2>
+                    </div>
+                    <div class="file-noticia">
+                        <img src="assets/img/i can fix.png" alt="">
+                    </div>
+                    <div class="text-container-noticia">
+                        <div class="parrafo">
+                            <p>Una partida de minecraft muy epica</p>
+                        </div>
+                    </div>
+                    <div class="button-container-noticia">
+                        <a href="leer-noticias-mas.php">
+                        <button class="create-post-button" id="more">Mas</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="contendor-noticia">
+                    <div class="header-noticia">
+                        <h2>Titulo de una noticia</h2>
+                    </div>
+                    <div class="file-noticia">
+                        <img src="assets/img/img-noticia.png" alt="">
+                    </div>
+                    <div class="text-container-noticia">
+                        <div class="parrafo">
+                            <p>Una partida de minecraft muy epica</p>
+                        </div>
+                    </div>
+                    <div class="button-container-noticia">
+                        <a href="leer-noticias-mas.php">
+                        <button class="create-post-button" id="more">Mas</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="contendor-noticia">
+                    <div class="header-noticia">
+                        <h2>Titulo de una noticia</h2>
+                    </div>
+                    <div class="file-noticia">
+                        <img src="assets/img/img-noticia.png" alt="">
+                    </div>
+                    <div class="text-container-noticia">
+                        <div class="parrafo">
+                            <p>Una partida de minecraft muy epica</p>
+                        </div>
+                    </div>
+                    <div class="button-container-noticia">
+                        <a href="leer-noticias-mas.php">
+                        <button class="create-post-button" id="more">Mas</button>
+                        </a>
+                    </div>
+                </div>
                 <div class="contendor-noticia">
                     <div class="header-noticia">
                         <h2>Titulo de una noticia</h2>

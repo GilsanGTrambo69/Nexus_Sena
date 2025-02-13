@@ -43,7 +43,6 @@
             <div class="all-post">
                 <div class="friends-container">
                     <h2 class="titulo-verde-apartado">Solicitudes</h2>
-                    <span class="titulo-amigos">Solicitudes</span>
                     <div class="button-container-amigos">
                         <a href="Amigos.php">
                             <button class="btn-amigos">Mis Amigos</button>

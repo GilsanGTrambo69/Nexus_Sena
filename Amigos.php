@@ -42,7 +42,7 @@
         <main class="main-content">
             <div class="all-post">
                 <div class="friends-container">
-                    <span class="titulo-amigos">Mis Amigos</span>
+                    <h2>Amigos</h2>
                     <div class="button-container-amigos">
                         <a href="Amigos.php">
                             <button class="btn-amigos">Mis Amigos</button>

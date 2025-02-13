@@ -26,7 +26,11 @@
     border: 2px solid gray;
     padding: 10px;
 }
-
+.friends-container h2 {
+    font-family: Arial, sans-serif;
+    font-weight: 700; /* Negrita */
+    color: #22c55e;
+}
 .friend-button {
     background-color: #22c55e;
     border-radius: 50px;

@@ -20,9 +20,7 @@
             background-color: #f0f0f0;
             min-height: 100vh;
         }
-        .main-content{
-            max-height: 80vh !important;
-        }
+
     </style>
 </head>
 <body>
@@ -46,7 +44,7 @@
                 <div class="back-icon-container">
                     <a href="leer-noticias.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                            <circle class="circle" cx="12" cy="12" r="12" fill="#00d100"/>
+                            <circle class="circle" cx="12" cy="12" r="12" fill="#22c55e"/>
                             <g transform="translate(6, 6)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 6H2"/>
                                 <path d="M6 2L2 6l4 4"/>
