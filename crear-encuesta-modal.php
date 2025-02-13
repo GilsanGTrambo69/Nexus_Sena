@@ -25,11 +25,11 @@
                     </div>
                     <!--este es el boton para agregar otra opcion en la encuesta-->
                     <div class="btn-añadir-container">
-                        <button id="agregar-opcion">Añadir una opcion</button>
+                        <button id="agregar-opcion" type="button">Añadir una opcion</button>
                     </div>
                 </div>
                 <div class="button-left">
-                    <button class="cancelar-button" id="cancelar-encuesta">Cancelar</button>
+                    <button class="cancelar-button" id="cancelar-encuesta" type="button">Cancelar</button>
                     <button class="publicar-button">Publicar</button>
                 </div>
             </form>

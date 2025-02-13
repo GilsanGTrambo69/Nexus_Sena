@@ -1,4 +1,4 @@
-.main-content2{
+.main-content3{
     grid-area: main;
     background: whites;
     border-radius: 20px;
@@ -9,20 +9,17 @@
     z-index: 0;
 }
 
-.main-content::-webkit-scrollbar{
-    display: none;
-}
-
 .all-chats{
     border: 3px solid gray;
     border-radius: 7px;
-    padding: 15px;
+    padding: 5px;
     display: flex; /* Alinea los elementos en fila */
     gap: 2px; /* Espaciado entre secciones */
     justify-content: space-between; /* Distribuye el espacio entre secciones */
     display: flex;
     z-index: 3;
     position: relative;
+    max-height: 80vh;
 }
 /*Diseño de la lista de chats */
 .chats{
@@ -34,6 +31,7 @@
     overflow: hidden;
     border: 3px solid white;
     z-index: 1;
+    flex-direction: column;
 }
 .cabecera-chats{
     text-align: start;
@@ -82,13 +80,27 @@
 .container-chats{
     margin-top: 15px;
     width: auto;
-    height: 80vh;
     background-color: white;
+    height: 64vh;
     padding: 5px;
     overflow-y: auto;
+    flex-direction: column;
 }
-.container-chats::-webkit-scrollbar{
-    display: none;
+/*Estilo del fondo de la barra */
+.container-chats::-webkit-scrollbar {
+    width: 7px; /* Ancho vertical */
+    height: 10px; /* Alto horizontal */
+    border-radius: 5px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+/*Estilo de la barra deslizante */
+.container-chats::-webkit-scrollbar-thumb {
+    background: #acabab;
+    border-radius: 5px;
+}
+.container-chats::-webkit-scrollbar-thumb:hover {
+    background: #828181;
 }
 
 .usuario-container {
@@ -158,14 +170,14 @@
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 100vh; /* Ocupará toda la altura de la pantalla */
+    max-height: 80vh; /* Ocupará toda la altura de la pantalla */
     background: #f9f9f9;
     border: 3px solid gray;
     z-index: 1;
     overflow: hidden; /* Evita que el contenido empuje el contenedor-bar fuera */
 }
 
-.conversacion2{
+.conversacio{
     display: flex;
     flex-direction: column;
     min-height: 80vh;
@@ -220,7 +232,23 @@
     overflow-y: auto;      /* Activa el scroll si hay demasiados mensajes */
     padding: 15px;
     background-color: #ecf0f1;
-    min-height: 0;         /* Evita que su crecimiento desplace el contenedor-bar */
+    max-height: 65vh;
+}
+/*Estilo del fondo de la barra */
+.chat-mensajes::-webkit-scrollbar {
+    width: 7px; /* Ancho vertical */
+    height: 10px; /* Alto horizontal */
+    border-radius: 5px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+/*Estilo de la barra deslizante */
+.chat-mensajes::-webkit-scrollbar-thumb {
+    background: #acabab;
+    border-radius: 5px;
+}
+.chat-mensajes::-webkit-scrollbar-thumb:hover {
+    background: #828181;
 }
 
 .contenedor-bar{
@@ -281,18 +309,107 @@
         width: 100%;
         top: 0;
         left: 0;
-        height: 100vh;
     }
     .conversacion.hidden{
         display: none;
     }
 
+
 }
+@media (max-height: 830px){
+    .container-chats{
+        height: 63vh;
+    }
+}
+@media (max-height: 800px){
+    .container-chats{
+        height: 62vh;
+    }
+}
+@media (max-height: 757px){
+    .container-chats{
+        height: 61vh;
+    }
+}
+@media (max-height: 717px){
+    .container-chats{
+        height: 60vh;
+    }
+    .all-chats{
+        height: 79vh;
+    }
+}
+@media (max-height: 690px){
+    .container-chats{
+        height: 59vh;
+    }
+    .all-chats{
+        height: 78vh;
+    }
+}
+
+@media (max-height: 667px){
+    .container-chats{
+        height: 58vh;
+    }
+    .all-chats{
+        height: 77vh;
+    }
+}
+@media (max-height: 628px){
+    .container-chats{
+        height: 57vh;
+    }
+    .all-chats{
+        height: 76vh;
+    }
+}
+@media (max-height: 600px){
+    .container-chats{
+        height: 56vh;
+    }
+    .all-chats{
+        height: 75vh;
+    }
+}
+@media (max-height: 574px){
+    .container-chats{
+        height: 55vh;
+    }
+    .all-chats{
+        height: 74vh;
+    }
+}
+@media (max-height: 552px){
+    .container-chats{
+        height: 54vh;
+    }
+    .all-chats{
+        height: 73vh;
+    }
+}
+@media (max-height: 534px){
+    .container-chats{
+        height: 53vh;
+    }
+    .all-chats{
+        height: 72vh;
+    }
+}
+@media (max-height: 500px){
+    .container-chats{
+        height: 52vh;
+    }
+    .all-chats{
+        height: 71vh;
+    }
+}
+/*
 @media (max-height: 800px) {
     .conversacion2 {
-        height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+        height: 80vh; /* Ajusta la altura para pantallas más pequeñas *
     }
     .chat-mensajes {
-        max-height: calc(100vh - 100px); /* Ajusta el espacio disponible */
+        max-height: calc(100vh - 100px); /* Ajusta el espacio disponible *
     }
-}
+}*/

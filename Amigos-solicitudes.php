@@ -42,7 +42,8 @@
         <main class="main-content">
             <div class="all-post">
                 <div class="friends-container">
-                    <span class="titulo-amigos">Mis Amigos</span>
+                    <h2 class="titulo-verde-apartado">Solicitudes</h2>
+                    <span class="titulo-amigos">Solicitudes</span>
                     <div class="button-container-amigos">
                         <a href="Amigos.php">
                             <button class="btn-amigos">Mis Amigos</button>
@@ -51,6 +52,7 @@
                             <button class="btn-amigos">Solicutudes de Amistad</button>
                         </a>
                     </div>
+                    <span class="titulo-amigos"></span>
                     <div class="my-friends">
                         <div class="container">
                             <div class="image">
@@ -61,55 +63,8 @@
                                 <p class="text-roll">Aprendiz</p>
                             </div>
                             <div class="buttons-container">
-                                <button class="button" id="eliminar1">Amigos</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="image">
-                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
-                            </div>
-                            <div class="text-container">
-                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
-                                <p class="text-roll">Aprendiz</p>
-                            </div>
-                            <div class="buttons-container">
-                                <button class="button">Amigos</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="image">
-                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
-                            </div>
-                            <div class="text-container">
-                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
-                                <p class="text-roll">Aprendiz</p>
-                            </div>
-                            <div class="buttons-container">
-                                <button class="button">Amigos</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="image">
-                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
-                            </div>
-                            <div class="text-container">
-                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
-                                <p class="text-roll">Aprendiz</p>
-                            </div>
-                            <div class="buttons-container">
-                                <button class="button">Amigos</button>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="image">
-                                <img src="assets/img/foto-perfil.png" alt="Imagen" class="image2">
-                            </div>
-                            <div class="text-container">
-                                <p class="text">Gilsan Yainiber Rodriguez Forero</p>
-                                <p class="text-roll">Aprendiz</p>
-                            </div>
-                            <div class="buttons-container">
-                                <button class="button">Amigos</button>
+                            <button class="eliminar-solicitud" >Eliminar</button>
+                                <button class="button">Aceptar</button>
                             </div>
                         </div>
                     </div>

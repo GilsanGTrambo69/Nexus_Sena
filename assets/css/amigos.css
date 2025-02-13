@@ -1,3 +1,26 @@
+.button-container-amigos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.btn-amigos{
+    background-color: white;
+    border-radius: 50px;
+    border: 3.5px solid #a9a9a9;
+    width: 25%;
+    height: 45px;
+    color: #a9a9a9;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.btn-amigos:hover{
+    border-color: #22c55e;
+    color: #22c55e;
+}
 .my-friends {
     border-radius: 3px;
     border: 2px solid gray;

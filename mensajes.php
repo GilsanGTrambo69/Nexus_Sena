@@ -39,7 +39,7 @@
         ?>
 
         <!-- Main Content -->
-        <main class="main-content2">
+        <main class="main-content3">
             <div class="all-chats">
                 <section class="chats" id="chats">
                     <div class="cabecera-chats">
@@ -144,7 +144,7 @@
                                 <img src="assets/img/foto-perfil.png" alt="Foto de usuario" class="foto-usuario2">
                             </div>
                             <div class="contenedor-texto">
-                                <div class="nombre-usuario">GILSAN YAINIBER RODRIGUE FORERO</div>
+                                <div class="nombre-usuario">Gabriel</div>
                                 <div class="mensaje-usuario">ultimo mensaje enviado :V</div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                                 <img src="assets/img/foto-perfil.png" alt="Foto de usuario" class="foto-usuario2">
                             </div>
                             <div class="contenedor-texto">
-                                <div class="nombre-usuario">GILSAN YAINIBER RODRIGUE FORERO</div>
+                                <div class="nombre-usuario">luis</div>
                                 <div class="mensaje-usuario">ultimo mensaje enviado :V</div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@
                                 <img src="assets/img/foto-perfil.png" alt="Foto de usuario" class="foto-usuario2">
                             </div>
                             <div class="contenedor-texto">
-                                <div class="nombre-usuario">GILSAN YAINIBER RODRIGUE FORERO</div>
+                                <div class="nombre-usuario">Dio</div>
                                 <div class="mensaje-usuario">ultimo mensaje enviado :V</div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                                 <img src="assets/img/foto-perfil.png" alt="Foto de usuario" class="foto-usuario2">
                             </div>
                             <div class="contenedor-texto">
-                                <div class="nombre-usuario">GILSAN YAINIBER RODRIGUE FORERO</div>
+                                <div class="nombre-usuario">mario</div>
                                 <div class="mensaje-usuario">ultimo mensaje enviado :V</div>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                         </div>
                         <!--Contenedor que almacenara los mensajes y la barra de texto-->
                         <div class="chat-mensajes">
-                            <div class="i">ffff</div>
+                            <div class="i">ffffTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptianTrue colors y Walk like an egyptian</div>
                         </div>
 
                         <div class="contenedor-bar">

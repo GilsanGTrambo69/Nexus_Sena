@@ -322,7 +322,7 @@ body {
     border-radius: 20px;
     padding: 10px 80px 80px 80px;
     overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
-    max-height: 89vh;
+    max-height: 85vh;
     height: auto;
 }
 
@@ -875,6 +875,10 @@ body {
     text-align: right;
     color: #22c55e;
     cursor: pointer;
+}
+.titulo-apartado-verde{
+    color: #22c55e;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .like-fill{
