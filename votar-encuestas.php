@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/page-container.css">
     <link rel="stylesheet" href="./assets/css/plantilla.css">
+    <link rel="stylesheet" href="./assets/css/encuestas.css">
 
     <title>Plantilla pagina de inicio</title>
     <style>
@@ -56,14 +57,49 @@
                     <div class="contenedor-publicacion2">
                         <div class="contenedor-publicacion3">
                             <p>Una encuesta</p>
-                        </div>
+                            <form action="">
+                                <div class="contenedor-encuesta">
+                                    <div class="opc-encuesta">
+                                        <div class="container-opc">
+                                            <div class="container-opc2">
+                                                <input type="radio" name="size" id="large1">
+                                                <label for="large1"><span class="text-opc">Opcion 1</span></label>
+                                            </div>
+                                            <div class="number-vote"><span>Numero de votos</span></div>
+                                        </div>
+                                        <div class="container-opc">
+                                            <div class="container-opc2">
+                                                <input type="radio" name="size" id="large2">
+                                                <label for="large2"><span class="text-opc">Opcion 1</span></label>
+                                            </div>
+                                            <div class="number-vote"><span>Numero de votos</span></div>
+                                        </div>
+                                        <div class="container-opc">
+                                            <div class="container-opc2">
+                                                <input type="radio" name="size" id="large3" >
+                                                <label for="large3"><span class="text-opc">Opcion 1</span></label>
+                                            </div>
+                                            <div class="number-vote"><span>Numero de votos</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="votar-button">
+                                        <button type="submit">Votar</button>
+                                    </div>
+                                    <div class="encuesta-footer">
+                                        <span>Numero de votos</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>                                                      
                     </div>
                 </div>
-            </div>
+            </div><
         </main>
         <!-- Toggle Button -->
         <button class="sidebar-toggle" id="sidebarToggle">☰</button>
     </div>
+    <script src="js/scripts-encuestas.js"></script>
     <script src="js/scripts.js" ></script>
 
 </body>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/page-container.css">
     <link rel="stylesheet" href="./assets/css/plantilla.css">
+    <link rel="stylesheet" href="./assets/css/encuestas.css">
 
     <title>Plantilla pagina de inicio</title>
     <style>

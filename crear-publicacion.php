@@ -50,7 +50,7 @@
                 </div>
                 <br>
                 <div class="button-left">
-                    <button class="cancelar-button" id="cancelar-button">Cancelar</button>
+                    <button class="cancelar-button" id="cancelar-button" type="button">Cancelar</button>
                     <button class="publicar-button">Publicar</button>
                 </div>
             </form>
