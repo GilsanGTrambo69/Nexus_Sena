@@ -318,11 +318,11 @@ body {
 /* Main Content Styles */
 .main-content {
     grid-area: main;
-    background: gray;
+    background: white;
     border-radius: 20px;
     padding: 10px 80px 80px 80px;
     overflow-y: auto; /* Cambia de 'auto' a 'visible' si no deseas el scroll */
-    max-height: 85vh;
+    max-height: 90vh; /*HACER los media Queries en cada una de las pantallas!!Se debe dejar en 90vh!!*/
     height: auto;
 }
 
@@ -365,6 +365,7 @@ body {
     border: 3px solid gray;
     border-radius: 7px;
     padding: 15px;
+    background-color: white;
 }
 .create-post-button{
     background-color: white;

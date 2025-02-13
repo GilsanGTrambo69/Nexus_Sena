@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <!--Apartado de encuestas de el ADMINISTRADOR, PERSONAL DE BIENESTAR Y LOS INSTRUCTORES-->
+        <!--Apartado de encuestas de LOS APRENDICES-->
     <div class="page-container">
         <!-- Header -->
 
@@ -42,8 +42,6 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="all-post">
-                <button class="create-post-button" id="crear-encuesta-button">Crear una Encuesta</button>
-                <?php require 'crear-encuesta-modal.php';?>
                 <!--Contenedor de una encuesta-->
                 <div class="contenedor-publicacion">
                     <div class="publicacion-header">

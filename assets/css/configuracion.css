@@ -17,10 +17,11 @@
     align-items: center;
 }
 .nexus-logo img{
-    width: 180px;
+    width: 200px;
     height: 110px;
     cursor: pointer;
     -webkit-user-drag: none; /* Evita arrastrar la imagen */
+    margin-right: 50px;
 }
 
 .titulo-config{
@@ -53,7 +54,9 @@
     align-items: center; /*CENTRA VERTICALMENTE */
     margin-left: 10px;
 }
-
+.informacion-usuario{
+    background-color: white;
+}
 
 a{
     text-decoration: none;
@@ -368,52 +371,93 @@ a{
     overflow: none;
 }
 
-/*Aprtado de notificaciones*/
+
+/*//////////////////Aprtado de notificaciones/////////////////////////////////*/
 .notification-container{
     width: 100%;
     padding: 20px;
     margin-top: 20px;
 }
-
-.custom-checkbox {
+.checkbox-container{
+    width: 100%;
+    padding: 0 5px 0 0;
+    margin-top: 20px;
+    gap: 20px;
     display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 8px;
-
+    background-color: white;
 }
 
-.custom-checkbox input {
-    display: block;
-}
-.custom-checkbox input[type="checkbox"] {
-    transform: scale(2); /* Aumenta el tamaño en un 50% */
+.text-opc-notification{
+    margin-left: 10px;
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.checkmark {
-    width: 60px;
-    height: 60px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #22c55e;
-    border-radius: 5px;
-    margin-right: 10px;
+.switch {
     position: relative;
     display: inline-block;
+    width: 50px;
+    height: 27px;
 }
 
-.custom-checkbox input:checked + .checkmark {
-    background-color: #22c55e;
-    border-color: #22c55e;
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.custom-checkbox input:checked + .checkmark::after {
-    content: '';
-    color: white;
-    font-size: 16px;
+.slider {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #22c55e;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px  #22c55e;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.gray-text-bottom{
+    margin-top: 20px;
+    color: gray;
+    font-size: 13px;
 }

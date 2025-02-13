@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/page-container2.css">
     <link rel="stylesheet" href="./assets/css/configuracion.css">
 
-    <title>Perfil de Usuario</title>
+    <title>Notificaciones</title>
     <style>
         * {
             margin: 0;
@@ -54,17 +54,124 @@
                 <div class="notification-container">
                     <div class="titulo-config">Qué notificacion recibes</div>
                     <form action="#">
-                    <div>
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="notificaciones" id="">
-                            <span class="checkmark"></span>
-                            Encuestas
-                        </label>
-                    </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Comentarios
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Publicaciones
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Solicitudes de amistad
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Novedades de amigos
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Etiquetas
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Videos
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Foros
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                Otras notificaciones
+                            </div>
+                        </div>
                     </form>
-                    
                 </div>
-                
+                <div class="notification-container">
+                    <div class="titulo-config">Qué notificacion recibes</div>
+                    <form action="#">
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                En el correo electrónico
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" name="notificaciones" id="">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="text-opc-notification">
+                                En la plataforma
+                            </div>
+                        </div>
+                        <div class="gray-text-bottom">Estas opciones no afectaran las notificaciones que reciben otros administradores.</div>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
