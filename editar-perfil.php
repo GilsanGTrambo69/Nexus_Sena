@@ -83,70 +83,7 @@
                             <div class="titulo">Informacion Personal</div>
                             <div class="titulo-informacion">Quien puede verlo?</div>
                         </div>
-                        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Domicilio:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-1">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="Domicilio-input" placeholder="-" value="">
-                            </div>
-                        </div>
-        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Fecha de nacimiento:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-2">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="fecha-nacimiento-input" placeholder="-" value="">
-                            </div>
-                        </div>
-                        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Empelo:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-3">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="empleo-input" placeholder="-" value="">
-                            </div>
-                        </div>
-        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Gustos:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-4">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="gustos-input" placeholder="-" value="">
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="informacion-usuario">
-                        <div class="fila">
-                            <div class="titulo">Otra informacion</div>
-                            <div class="titulo-informacion">Quien puede verlo?</div>
-                        </div>
-                        
+
                         <div class="informacion-detalle">
                             <div class="fila">
                                 <div class="titulo-informacion">Amigos:</div>
@@ -158,48 +95,6 @@
                             </div>
                             <div class="fila">
                                 <div class="informacion">-</div>
-                            </div>
-                        </div>
-        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Genero:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-6">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="genero-input" placeholder="-" value="">
-                            </div>
-                        </div>
-                        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Orientacion sexual:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-7">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="orientacion-input" placeholder="-" value="">
-                            </div>
-                        </div>
-        
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Discapacidad:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-8">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <input type="text" name="" id="discapacidad-input" placeholder="-" value="">
                             </div>
                         </div>
                     </div>
@@ -215,6 +110,7 @@
                         
                     </div>
                 </form>
+            </div>
         </div>
     </main>
     <!--Eliminar post confirmacion-->
@@ -225,18 +121,20 @@
             <span class="titulo">Foto de perfil</span>
             <br>
             <br>
-            <div class="input-container">
-                <input type="file" name="fileInput1" id="fileInput1" class="input-file1">
-                <label for="fileInput1" class="file-label1">Adjuntar archivo</label>
-            </div>
+            <form action="" method="post">
+                <div class="input-container">
+                    <input type="file" name="fileInput1" id="fileInput1" class="input-file1">
+                    <label for="fileInput1" class="file-label1">Adjuntar archivo</label>
+                </div>
 
-            <br>
-            <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
-            <div class="file-preview2" id="filePreview1"></div>
-            <br>
-            <div class="save-container">
-                <button class="button-guardar">Guardar</button>
-            </div>
+                <br>
+                <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
+                <div class="file-preview2" id="filePreview1"></div>
+                <br>
+                <div class="save-container">
+                    <button class="button-guardar" type="submit">Guardar</button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -247,18 +145,21 @@
             <span class="titulo">Cambiar fondo de perfil</span>
             <br>
             <br>
-            <div class="input-container">
-                <input type="file" name="fileInput2" id="fileInput2" class="input-file1" >
-                <label for="fileInput2" class="file-label1">Adjuntar archivo</label>
-            </div>
+            <form action="" method="post">
+                <div class="input-container">
+                    <input type="file" name="fileInput2" id="fileInput2" class="input-file1" >
+                    <label for="fileInput2" class="file-label1">Adjuntar archivo</label>
+                </div>
 
-            <br>
-            <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
-            <div class="file-preview2" id="filePreview2"></div>
-            <br>
-            <div class="save-container">
-                <button class="button-guardar">Guardar</button>
-            </div>
+                <br>
+                <!--Vista previa de los archivos que son seleccionados para la foto de perfil-->
+                <div class="file-preview2" id="filePreview2"></div>
+                <br>
+                <div class="save-container">
+                    <button class="button-guardar" type="submit">Guardar</button>
+                </div>
+            </form>
+
         </div>
     </div>
 
