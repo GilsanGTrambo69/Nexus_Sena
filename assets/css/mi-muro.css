@@ -365,6 +365,7 @@ body {
 }
 
 .button-guardar {
+    margin-left: 20px;
     width: 40%;
     height: 50px;
     color: white;

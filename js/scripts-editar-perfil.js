@@ -1,30 +1,28 @@
 //Modal cambiar foto de perfil
 const cambiarBack1 = document.getElementById('cambiar-back1');
 const cambiarButton1 = document.getElementById('cambiar-foto');
+const closeModal1 = document.getElementById('cancelar-1');
 
 cambiarButton1.addEventListener('click', () => {
     cambiarBack1.style.display = 'block';
 })
 
-cambiarBack1.addEventListener('click', (e) => {
-    if(cambiarBack1 === e.target) {
-        cambiarBack1.style.display = 'none';
-    }
+closeModal1.addEventListener('click', () => {
+    cambiarBack1.style.display = 'none';
 })
 
 
 //Modal cambiar foto de Portada
 const cambiarBack2 = document.getElementById('cambiar-back2');
 const cambiarButton2 = document.getElementById('cambiar-portada');
+const closeModal2 = document.getElementById('cancelar-2');
 
 cambiarButton2.addEventListener('click', () => {
     cambiarBack2.style.display = 'block';
 })
 
-cambiarBack2.addEventListener('click', (e) => {
-    if(cambiarBack2 === e.target) {
-        cambiarBack2.style.display = 'none';
-    }
+closeModal2.addEventListener('click', () => {
+    cambiarBack2.style.display = 'none';
 })
 
 //<!--Vista previa 1-->

@@ -53,63 +53,50 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="all-post">
-                <form action="#">
-                    <div class="informacion-usuario">
-                        <div class="titulo">Informacion Publica</div>
-                        <div class="informacion-detalle">
-                            <divc class="fila">
-                                <div class="informacion">Foto de Perfil</div>
-                                <p class="green-link" id="cambiar-foto">Cambiar Foto</p>
-                            </divc>
-        
-                            <div class="fila">
-                                <div class="titulo-informacion">nombre del archivo</div>
-                            </div>
-                        </div>
-                        <div class="informacion-detalle">
-                            <divc class="fila">
-                                <div class="informacion">Foto de Portada</div>
-                                <p class="green-link" id="cambiar-portada">Cambiar Foto</p>
-                            </divc>
-        
-                            <div class="fila">
-                                <div class="titulo-informacion">nombre del archivo</div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="informacion-usuario">
+                <div class="informacion-usuario">
+                    <div class="titulo">Informacion Publica</div>
+                    <div class="informacion-detalle">
+                        <divc class="fila">
+                            <div class="informacion">Foto de Perfil</div>
+                            <p class="green-link" id="cambiar-foto">Cambiar Foto</p>
+                        </divc>
+    
                         <div class="fila">
-                            <div class="titulo">Informacion Personal</div>
-                            <div class="titulo-informacion">Quien puede verlo?</div>
+                            <div class="titulo-informacion">nombre del archivo</div>
                         </div>
+                    </div>
+                    <div class="informacion-detalle">
+                        <divc class="fila">
+                            <div class="informacion">Foto de Portada</div>
+                            <p class="green-link" id="cambiar-portada">Cambiar Foto</p>
+                        </divc>
+    
+                        <div class="fila">
+                            <div class="titulo-informacion">nombre del archivo</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="informacion-usuario">
+                    <div class="fila">
+                        <div class="titulo">Informacion Personal</div>
+                        <div class="titulo-informacion">Quien puede verlo?</div>
+                    </div>
 
-                        <div class="informacion-detalle">
-                            <div class="fila">
-                                <div class="titulo-informacion">Amigos:</div>
-                                <select class="menu-desplegable" name="" id="opc-informacion-5">
-                                    <option class="option" value="todos">Todos</option>
-                                    <option value="nadie">Nadie</option>
-                                    <option value="solo-yo">Solo Yo</option>
-                                </select>
-                            </div>
-                            <div class="fila">
-                                <div class="informacion">-</div>
-                            </div>
+                    <div class="informacion-detalle">
+                        <div class="fila">
+                            <div class="titulo-informacion">Amigos:</div>
+                            <select class="menu-desplegable" name="" id="opc-informacion-5">
+                                <option class="option" value="todos">Todos</option>
+                                <option value="nadie">Nadie</option>
+                                <option value="solo-yo">Solo Yo</option>
+                            </select>
+                        </div>
+                        <div class="fila">
+                            <div class="informacion">-</div>
                         </div>
                     </div>
-                    <div class="contenedor-fijo">
-                        <center>
-                            <div class="text">Guardar cambios realizados</div>
-                            <br>
-                            <div>
-                                <button class="button-cancelar">Cancelar</button>
-                                <button class="button-guardar">Guardar</button>
-                            </div>
-                        </center>
-                        
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>
@@ -123,8 +110,9 @@
             <br>
             <form action="" method="post">
                 <div class="input-container">
-                    <input type="file" name="fileInput1" id="fileInput1" class="input-file1">
-                    <label for="fileInput1" class="file-label1">Adjuntar archivo</label>
+                    <input type="file" accept=".png, .jpg, .jpeg">
+                    <!--input type="file" name="fileInput1" id="fileInput1" class="input-file1">
+                    <label-- for="fileInput1" class="file-label1">Adjuntar archivo</label-->
                 </div>
 
                 <br>
@@ -132,7 +120,8 @@
                 <div class="file-preview2" id="filePreview1"></div>
                 <br>
                 <div class="save-container">
-                    <button class="button-guardar" type="submit">Guardar</button>
+                    <button class="button-cancelar" type="button" id="cancelar-1">Cancelar</button>
+                    <button class="button-guardar" type="submit">Guardar</button>                
                 </div>
             </form>
         </div>
@@ -156,10 +145,10 @@
                 <div class="file-preview2" id="filePreview2"></div>
                 <br>
                 <div class="save-container">
-                    <button class="button-guardar" type="submit">Guardar</button>
+                    <button class="button-cancelar" type="button" id="cancelar-2">Cancelar</button>
+                    <button class="button-guardar" type="submit">Guardar</button>                
                 </div>
             </form>
-
         </div>
     </div>
 
