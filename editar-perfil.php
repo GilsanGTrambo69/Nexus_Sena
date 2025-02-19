@@ -25,27 +25,23 @@
         .sidebar-toggle{
             display: none;
         }
-        .page-container {
-            grid-template-areas:
-            "header header"
-            "main main";
+        .header-front{
+            background: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
-        
     </style>
 </head>
 <body>
     <div class="page-container">
         <!-- Header -->
-        <header class="header">
-            <?php
-                require 'cabecera.php';
-            ?>
-        </header>
-        
+        <?php
+            require 'cabecera.php';
+        ?>
 
-
-        <!-- Sidebar -->
-        
         <?php
             require 'sidebar.php';
         ?>
