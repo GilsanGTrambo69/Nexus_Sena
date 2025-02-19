@@ -31,7 +31,7 @@
                     <a href="Inicio.php">
                         <div class="back-icon-config">
                             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                 <g transform="translate(6, 6)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M12 6H2"/>
                                     <path d="M6 2L2 6l4 4"/>
@@ -53,7 +53,7 @@
                             <div class="opciones-container">
                                 <div class="opc-con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                        <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                         <g transform="translate(6, 5)" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M8 1H2c-.5 0-1 .5-1 1v10c0 .5.5 1 1 1h8c.5 0 1-.5 1-1V4L8 1z"/>
                                             <path d="M4 6h4M4 9h4M4 12h3"/>
@@ -69,7 +69,7 @@
                             <div class="opciones-container">
                                 <div class="opc-con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                        <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                         <g transform="translate(7, 6)" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                                             <rect x="0" y="5" width="10" height="8" rx="1"/>
                                             <path d="M2 5V4a3 3 0 0 1 6 0v1"/>
@@ -90,7 +90,7 @@
                             <div class="opciones-container">
                                 <div class="opc-con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                        <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                         <g transform="translate(8, 6)" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M4 12c.5 0 .9-.3 1.1-.7H2.9c.2.4.6.7 1.1.7z"/>
                                             <path d="M8 4a4 4 0 0 0-8 0c0 5-2 6-2 6h12s-2-1-2-6"/>

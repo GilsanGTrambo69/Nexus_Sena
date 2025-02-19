@@ -14,11 +14,24 @@
                 <a href="Inicio.php"><img src="./assets/img/logo-sena.png" alt="Logo-sena"></a>
             </div>
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Buscar">
-                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"/>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                </svg>
+                <form action="#">
+                    <div id="search-bar">
+                        <input type="text" class="search-input" placeholder="Buscar">
+                        <button type="submit" class="button-search-icon" id="button-search">
+                            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="busqueda-reciente-bar" id="busqueda-reciente-bar">
+                    <div>Ejemplo</div>
+                    <div>Ejemplo</div>
+                    <div>Ejemplo</div>
+                </div>
+
             </div>
             
             <div class="notifications" id="notifications">

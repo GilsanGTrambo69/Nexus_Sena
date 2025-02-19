@@ -81,5 +81,19 @@ fileInput.addEventListener('change', function () {
     fileInput.value = '';
 });
 
+const busquedaReciente = document.getElementById('busqueda-reciente-bar');
+const searchBar = document.getElementById('search-bar');
+const buttonSearch = document.getElementById('button-search');
+
+//evento click con una funcion para abrir el modal
+searchBar.addEventListener('click', function(){
+    busquedaReciente.style.display = 'block';
+})
+
+document.addEventListener('click', function (e) {
+    if (!searchBar.contains(e.target) && !busquedaReciente.contains(e.target) && !buttonSearch.contains(e.target)) {
+        busquedaReciente.style.display = 'none';
+    }
+});
 
 

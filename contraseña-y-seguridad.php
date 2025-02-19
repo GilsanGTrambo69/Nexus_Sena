@@ -31,7 +31,7 @@
                     <a href="Configuracion.php">
                         <div class="back-icon-config">
                             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                 <g transform="translate(6, 6)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M12 6H2"/>
                                     <path d="M6 2L2 6l4 4"/>
@@ -55,7 +55,7 @@
                         <div class="opciones-container">
                             <div class="opc-con">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="12" fill="#00d100"/>
+                                    <circle cx="12" cy="12" r="12" fill="#22c55e"/>
                                     <g transform="translate(5, 7)" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="0" y="3" width="14" height="7" rx="1"/>
                                         <path d="M3 3V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/>
