@@ -51,6 +51,7 @@
             <div class="all-post">
                 <div class="profile-container-m">
                     <div class="banner-m">
+                        <img src="assets/img/peperina.jpg" alt="banner">
                         <div class="profile-picture-m">
                             <img src="./assets/img/foto-perfil.png" alt="Foto de perfil">
                         </div>

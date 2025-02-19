@@ -633,6 +633,14 @@ body {
 .input-bar:hover{
     outline-color: #22c55e;
 }
+.send-coment-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
 
 
 /*Modal para crear un post*/
