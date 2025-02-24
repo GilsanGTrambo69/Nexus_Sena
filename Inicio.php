@@ -50,6 +50,20 @@
                             <div class="Nombre-usuario">Alejandro</div>
                             <div class="fecha-publicacion">Fecha de la publicacion</div>
                         </div>
+                        <div class="tres-puntos-button">
+                            <div class="icon-opc" id="opc-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="2" fill="gray"/>
+                                    <circle cx="12" cy="12" r="2" fill="gray"/>
+                                    <circle cx="12" cy="18" r="2" fill="gray"/>
+                                </svg>
+                            </div>
+                            <div class="opc-post" id="opc-post">
+                                <div>Editar Publicación</div>
+                                <div>Eliminar Publicación</div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="contenedor-publicacion2">
                         <div class="contenedor-publicacion3">
@@ -106,6 +120,44 @@
                                         
                                         <div class="responder-comentario" id="responder-comentario">Responder</div>
                                     </div>
+                                    <div class="tres-puntos-button">
+                                        <div class="icon-opc-coment" id="opc-icon-coment">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="6" r="2" fill="gray"/>
+                                                <circle cx="12" cy="12" r="2" fill="gray"/>
+                                                <circle cx="12" cy="18" r="2" fill="gray"/>
+                                            </svg>
+                                        </div>
+                                        <div class="opc-coment" id="opc-coment">
+                                            <div>Eliminar Comentario</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comentario1">
+                                <div class="user-info-comentario">
+                                    <!--Informacion del usuario en el comentario-->
+                                    <div class="profile-picture-coment">
+                                        <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
+                                    </div>
+                                    <div class="user-info-coment">
+                                        <div class="nombre-usurio-coment"><span class="user-roll-coment">Aprendiz Sena-</span>Sena oficial</div>
+                                        <div class="comentario-user">Aqui va el texto de un comentario </div>
+                                        
+                                        <div class="responder-comentario" id="responder-comentario">Responder</div>
+                                    </div>
+                                    <div class="tres-puntos-button">
+                                        <div class="icon-opc-coment" id="opc-icon-coment">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="6" r="2" fill="gray"/>
+                                                <circle cx="12" cy="12" r="2" fill="gray"/>
+                                                <circle cx="12" cy="18" r="2" fill="gray"/>
+                                            </svg>
+                                        </div>
+                                        <div class="opc-coment" id="opc-coment">
+                                            <div>Eliminar Comentario</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="comentario1">
@@ -120,19 +172,17 @@
                                         
                                         <div class="responder-comentario" id="responder-comentario">Responder</div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="comentario1">
-                                <div class="user-info-comentario">
-                                    <!--Informacion del usuario en el comentario-->
-                                    <div class="profile-picture">
-                                        <img src="./assets/img/foto-perfil.png" alt="foto de perfil">
-                                    </div>
-                                    <div class="user-info-coment">
-                                        <div class="nombre-usurio-coment"><span class="user-roll-coment">Aprendiz Sena-</span>Sena oficial</div>
-                                        <div class="comentario-user">Aqui va el texto de un comentario</div>
-                                        
-                                        <div class="responder-comentario" id="responder-comentario">Responder</div>
+                                    <div class="tres-puntos-button">
+                                        <div class="icon-opc-coment" id="opc-icon-coment">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="6" r="2" fill="gray"/>
+                                                <circle cx="12" cy="12" r="2" fill="gray"/>
+                                                <circle cx="12" cy="18" r="2" fill="gray"/>
+                                            </svg>
+                                        </div>
+                                        <div class="opc-coment" id="opc-coment">
+                                            <div>Eliminar Comentario</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -147,6 +197,18 @@
                                         <div class="comentario-user">Aqui va el texto de un comentario</div>
                                         
                                         <div class="responder-comentario" id="responder-comentario">Responder</div>
+                                    </div>
+                                    <div class="tres-puntos-button">
+                                        <div class="icon-opc-coment" id="opc-icon-coment">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="6" r="2" fill="gray"/>
+                                                <circle cx="12" cy="12" r="2" fill="gray"/>
+                                                <circle cx="12" cy="18" r="2" fill="gray"/>
+                                            </svg>
+                                        </div>
+                                        <div class="opc-coment" id="opc-coment">
+                                            <div>Eliminar Comentario</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -154,11 +216,13 @@
                         <div class="contenedor-bar">
                             <div class="input-container">
                                 <input type="text" class="input-bar" placeholder="Esbribe un mensaje">
-                                <svg class="send-coment-icon" width= "30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 16 16 12 12 8"></polyline>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
+                                <button class="button-search-icon">
+                                    <svg class="send-coment-icon" width= "30px" height="30px" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 16 16 12 12 8"></polyline>
+                                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -166,18 +230,14 @@
                     <div class="separador-post"></div>
                 </div>
             </div>
-            <!-- Corazón con borde y relleno verde ->
-            <svg-- width="24" height="24" viewBox="0 0 24 24" fill="#22c55e" stroke="#22c55e" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg-->
         </main>
         <!-- Toggle Button -->
         <button class="sidebar-toggle" id="sidebarToggle">☰</button>
     </div>
-    <?php 
+    <?php
     include 'crear-publicacion.php';
     ?>
-    <script src="js/scripts.js" ></script>
+    <script src="js/scripts.js"></script>
     <script src="js/scripts-caja-comentarios.js"></script>
     <script src="js/scripts-like-publicacion.js"></script>
 

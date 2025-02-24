@@ -80,7 +80,7 @@
                         <div class="text-gray">Estapa</div>
                     </div>
                     <div class="info-container">
-                        <div class="subtitulo-verde">Otros cursos (esto solo lo prdras ver tu)</div>
+                        <div class="subtitulo-verde">Otros cursos (esto solo lo podras ver tu)</div>
                         <div class="text-gray">nombre del curso</div>
                     </div>
                 </div>

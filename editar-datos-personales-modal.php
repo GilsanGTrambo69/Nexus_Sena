@@ -26,9 +26,7 @@
                         </select>
                     </div>
                     <div class="fila2">
-                        <div>
-                            <div class="text-gray">gilyrodriguez@soy.sena.edu.co</div>
-                        </div>
+                        <input class="input-datos" type="text" name="" id="Domicilio-input" placeholder="-" value="">
                     </div>
                 </div>
 

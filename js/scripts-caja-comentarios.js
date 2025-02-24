@@ -12,3 +12,29 @@ function toggleApartado() {
 }
 //Evento al hacer click en el boton
 comentButton.addEventListener('click', toggleApartado);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".icon-opc-coment");
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+
+            // Encuentra el modal asociado al botón actual
+            const modal = button.nextElementSibling;
+
+            if (modal) {
+                modal.style.display = modal.style.display === "block" ? "none" : "block";
+            }
+        });
+    });
+
+    document.addEventListener("click", function (event) {
+        document.querySelectorAll(".opc-coment").forEach(modal => {
+            if (!modal.contains(event.target) && !modal.previousElementSibling.contains(event.target)) {
+                modal.style.display = "none";
+            }
+        });
+    });
+});

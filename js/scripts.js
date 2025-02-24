@@ -97,3 +97,17 @@ document.addEventListener('click', function (e) {
 });
 
 
+//opc de una publicacion
+
+const buttonOpc = document.getElementById('opc-icon');
+const opcModal = document.getElementById('opc-post');
+
+buttonOpc.addEventListener('click', function() {
+    opcModal.style.display = 'block';
+})
+
+document.addEventListener('click', function (e) {
+    if (!opcModal.contains(e.target) && !buttonOpc.contains(e.target)) {
+        opcModal.style.display = 'none';
+    }
+});
